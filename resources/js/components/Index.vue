@@ -1,30 +1,20 @@
 <template>
-<header>
-    <nav>
-        <ul>
-            <li>
-                <a href="">Sell on Laraexpress</a>
-            </li>
-             <li>
-                <a href="">Help</a>
-            </li>
-             <li>
-                <a href="">Wishlists</a>
-            </li>
-             <li>
-                <a href="">Account</a>
-            </li>
-        </ul>
-    </nav>
-</header>
+    <Navbar/>
 </template>
 
 <script>
+
+import Navbar from './Navbar.vue';
 export default {
-    name: "Welcome"
-}
+    name: "Welcome",
+    components: {
+        Navbar,
+    },
+
+    props: {},
+
+   
+};
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>
