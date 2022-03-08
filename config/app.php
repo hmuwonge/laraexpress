@@ -30,7 +30,7 @@ return [
 
 
 //    'mix_url' => env('APP_URL', null),
-    'mix_url' => env('MIX_ASSET_URL', null),
+    'mix_url' => env('MIX_ASSET_URL'),
 
     /*
     |--------------------------------------------------------------------------
