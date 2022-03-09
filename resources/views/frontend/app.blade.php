@@ -44,7 +44,7 @@
 {{--    <script src="{{ mix('web-assets/js/app.js') }}" defer></script>--}}
 {{--    <script src="{{ mix('js/app.js') }}"></script>--}}
     <style>
-        body,
+        /* body,
         .v-application {
             font-family: 'Roboto', sans-serif;
             font-weight: 400;
@@ -55,7 +55,7 @@
         :root {
             --primary: {{ get_setting('base_color', '#e62d04') }};
             --soft-primary: {{ hex2rgba(get_setting('base_color', '#e62d04'), 0.15) }};
-        }
+        } */
 
     </style>
 

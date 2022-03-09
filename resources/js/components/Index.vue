@@ -1,16 +1,16 @@
 <template>
-    <Navbar/>
     <Header/>
+    <div class="bg-gray-100 h-screen">
+
+    </div>
 </template>
 
 <script>
 
-import Navbar from './Navbar.vue';
-import Header from './Header'
+import Header from './Header';
 export default {
     name: "Welcome",
     components: {
-        Navbar,
         Header,
     },
 

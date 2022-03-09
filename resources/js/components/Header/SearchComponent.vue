@@ -1,7 +1,7 @@
 <template>
     <div class="flex flex-col">
 <div class="flex w-full">
-    <input type="text" placeholder="shoes fshion" class="w-120 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent rounded-l-md border-2 border-red-500 border-r-0">
+    <input type="text" placeholder="shoes fashion" class="w-120 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent rounded-l-md border-2 border-red-500 border-r-0">
     <select class="w-1/4 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent border-2 border-red-500 border-r-0 border-l-0">
         <option>All Categories</option>
         <option>All Categories</option>
