@@ -52,13 +52,13 @@
                     <div
                         v-if="isAccountLinkHovered"
                         @mouseleave="isAccountLinkHovered = false"
-                        class="absolute right-0 p-4 w-max h-max bg-gray mt-3"
+                        class="absolute right-0 p-4 w-max h-max bg-gray-100 mt-3"
                     >
                         <div
                             class="flex space-x-2 py-2 border-b-2 border-gray-300"
                         >
                             <button
-                                class="bg-red-500 text-white py-2 px-8 text-center font-bold"
+                                class="bg-red-500  text-white py-2 px-8 text-center font-bold"
                             >
                                 Join
                             </button>
@@ -87,7 +87,7 @@
             </ul>
         </nav>
     </header>
-        
+
     </div>
 </template>
 
@@ -105,7 +105,7 @@ export default {
         };
     },
 
-   
+
 };
 </script>
 
