@@ -4,7 +4,8 @@ import Index from '../components/Index'
 
 const routes = [
     {
-        path: '/theshop/',
+        path: '/',
+        // path: '/theshop/',
         name: 'home',
         component: Index
     }
