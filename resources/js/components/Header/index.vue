@@ -11,6 +11,7 @@
 import Top from '../Navbar.vue';
 import Logo from './LogoHeader.vue';
 import Search from './SearchComponent.vue'
+
 export default{
     components:{
         Top,

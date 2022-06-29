@@ -38,7 +38,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 
     <!-- Styles -->
-   <link href="{{ asset('web-assets/css/app.css') }}" rel="stylesheet">
+   <link href="{{ mix('web-assets/css/app.css') }}" rel="stylesheet">
     <!-- Scripts -->
 
 {{--    <script src="{{ mix('web-assets/js/app.js') }}" defer></script>--}}
@@ -146,7 +146,7 @@
     @endif
 
     {!! get_setting('footer_script') !!}
-    <script src="{{asset('web-assets/js/app.js')}}" defer></script>
+    <script src="{{mix('web-assets/js/app.js')}}" defer></script>
 </body>
 
 </html>

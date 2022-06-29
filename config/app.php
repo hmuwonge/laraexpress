@@ -29,8 +29,8 @@ return [
     'env' => env('APP_ENV', 'production'),
 
 
-//    'mix_url' => env('APP_URL', null),
-    'mix_url' => env('MIX_ASSET_URL'),
+   'mix_url' => env('APP_URL'),
+    // 'mix_url' => env('MIX_ASSET_URL'),
 
     /*
     |--------------------------------------------------------------------------

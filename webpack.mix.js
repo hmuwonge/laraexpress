@@ -9,7 +9,8 @@
 
 const mix = require("laravel-mix");
 
-mix.setResourceRoot(process.env.MIX_ASSET_URL);
+mix.setResourceRoot(process.env.APP_URL);
+// mix.setResourceRoot(process.env.MIX_ASSET_URL);
 // mix.config.fileLoaderDirs.fonts = "web-assets/fonts";
 mix.webpackConfig({
     output: {
@@ -22,3 +23,10 @@ mix.js("resources/js/app.js", "public/web-assets/js")
     .postCss("resources/css/app.css", "public/web-assets/css", [
         require("tailwindcss"),
     ]);
+
+mix.options({
+    hmrOptions: {
+        host: 'http://127.0.0.1',  // mysite.test is my local domain used for testing
+        port: 8000,
+    }
+    });

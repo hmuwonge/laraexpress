@@ -54,7 +54,7 @@
                         @mouseleave="isAccountLinkHovered = false"
                         class="absolute right-0  w-max h-max p-4 border-2 bg-white mt-3 z-50"
                     >
-                    <span class="text-base text-gray-500 p-4">Welcome to laraExpress</span>
+                    <span class="text-base text-gray-500 p-4 transition ease-out">Welcome to laraExpress</span>
                         <div
                             class="flex space-x-2 py-2 border-b-2 border-gray-300"
                         >
