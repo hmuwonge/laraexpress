@@ -147,6 +147,8 @@
 
     {!! get_setting('footer_script') !!}
     <script src="{{mix('web-assets/js/app.js')}}" defer></script>
+    <script src="https://unpkg.com/flowbite@1.4.7/dist/flowbite.js"></script>
+
 </body>
 
 </html>

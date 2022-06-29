@@ -17,6 +17,9 @@ mix.webpackConfig({
         chunkFilename: "web-assets/js/[name].js?id=[chunkhash]",
         publicPath: "/public/",
     },
+    stats: {
+        children: true,
+    },
 });
 mix.js("resources/js/app.js", "public/web-assets/js")
     .vue()
@@ -26,7 +29,7 @@ mix.js("resources/js/app.js", "public/web-assets/js")
 
 mix.options({
     hmrOptions: {
-        host: 'http://127.0.0.1',  // mysite.test is my local domain used for testing
-        port: 8000,
+        host: 'sites.laraexpress.test',  // mysite.test is my local domain used for testing
+        port: '8000',
     }
     });
