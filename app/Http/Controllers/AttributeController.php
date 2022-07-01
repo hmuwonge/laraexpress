@@ -6,7 +6,6 @@ use Illuminate\Http\Request;
 use App\Models\Attribute;
 use App\Models\AttributeTranslation;
 use App\Models\AttributeValue;
-use CoreComponentRepository;
 
 class AttributeController extends Controller
 {
@@ -25,7 +24,7 @@ class AttributeController extends Controller
      */
     public function index()
     {
-        CoreComponentRepository::instantiateShopRepository();
+        
         $attributes = Attribute::orderBy('created_at', 'desc')->paginate(10);
         return view('backend.product.attribute.index', compact('attributes'));
     }

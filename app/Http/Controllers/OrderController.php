@@ -6,7 +6,6 @@ use App\Models\CommissionHistory;
 use Illuminate\Http\Request;
 use App\Models\Order;
 use App\Models\User;
-use CoreComponentRepository;
 
 class OrderController extends Controller
 {
@@ -19,7 +18,7 @@ class OrderController extends Controller
 
     public function index(Request $request)
     {
-        CoreComponentRepository::instantiateShopRepository();
+        
 
         $payment_status = null;
         $delivery_status = null;
