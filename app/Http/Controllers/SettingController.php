@@ -9,7 +9,6 @@ use App\Models\Shop;
 use App\Models\User;
 use App\Services\ShopService;
 use Artisan;
-use CoreComponentRepository;
 
 class SettingController extends Controller
 {
@@ -25,7 +24,7 @@ class SettingController extends Controller
 
     public function general_setting(Request $request)
     {
-        CoreComponentRepository::instantiateShopRepository();
+        
     	return view('backend.settings.general_settings');
     }
 
@@ -34,31 +33,31 @@ class SettingController extends Controller
 
     public function social_login(Request $request)
     {
-        CoreComponentRepository::instantiateShopRepository();
+        
         return view('backend.settings.social_login');
     }
 
     public function smtp_settings(Request $request)
     {
-        CoreComponentRepository::instantiateShopRepository();
+        
         return view('backend.settings.smtp_settings');
     }
 
     public function third_party_settings(Request $request)
     {
-        CoreComponentRepository::instantiateShopRepository();
+        
         return view('backend.settings.third_party_settings');
     }
 
     public function payment_method(Request $request)
     {
-        CoreComponentRepository::instantiateShopRepository();
+        
         return view('backend.settings.payment_method');
     }
 
     public function file_system(Request $request)
     {
-        CoreComponentRepository::instantiateShopRepository();
+        
         return view('backend.settings.file_system');
     }
 

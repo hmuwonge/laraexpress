@@ -9,7 +9,6 @@ use Hash;
 use App\Models\Setting;
 use App\Models\Shop;
 use App\Models\User;
-use CoreComponentRepository;
 use Str;
 
 class InstallController extends Controller
@@ -32,7 +31,7 @@ class InstallController extends Controller
     }
 
     public function step3($error = "") {
-        CoreComponentRepository::instantiateShopRepository();
+        
         if($error == ""){
             return view('installation.step3');
         }else {

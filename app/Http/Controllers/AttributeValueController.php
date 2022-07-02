@@ -6,7 +6,6 @@ use Illuminate\Http\Request;
 use App\Models\Attribute;
 use App\Models\AttributeValue;
 use App\Models\AttributeValueTranslation;
-use CoreComponentRepository;
 
 class AttributeValueController extends Controller
 {
