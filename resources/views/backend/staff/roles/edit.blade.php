@@ -9,19 +9,16 @@
 
         <!--Horizontal Form-->
         <!--===================================================-->
-        <form class="form-horizontal" action="{{ route('roles.update', $role->id) }}" method="POST"
-            enctype="multipart/form-data">
+        <form class="form-horizontal" action="{{ route('roles.update', $role->id) }}" method="POST" enctype="multipart/form-data">
             @csrf
             <input type="hidden" name="_method" value="PATCH">
             <div class="card-body">
                 <div class="row">
                     <div class="col-8 mx-auto">
                         <div class="form-group row">
-                            <label class="col-md-2 col-form-label">{{ translate('Role Name') }}<span
-                                    class="text-danger">*</span></label>
+                            <label class="col-md-2 col-form-label">{{ translate('Role Name') }}<span class="text-danger">*</span></label>
                             <div class="col-md-9">
-                                <input type="text" placeholder="{{ translate('Name') }}" id="name" name="name"
-                                    value="{{ $role->name }}" class="form-control" required>
+                                <input type="text" placeholder="{{ translate('Name') }}" id="name" name="name" value="{{ $role->name }}" class="form-control" required>
                             </div>
                         </div>
                     </div>
@@ -36,51 +33,49 @@
                     $permission_groups = \App\Models\Permission::all()->groupBy('parent');
                 @endphp
                 @foreach ($permission_groups as $key => $permission_group)
-                    <div class="bd-example">
-                        <ul class="list-group">
-                            <li class="list-group-item bg-light" aria-current="true">
-                                {{ translate(ucwords(str_replace('_', ' ', $permission_group[0]['parent']))) }}</li>
-                            <li class="list-group-item">
-                                <div class="row">
-                                    @foreach ($permission_group as $key => $permission)
-                                        @php
-                                            $check = true;
-                                            if ($permission_group[0]['parent'] == 'multi_vendor') {
-                                                if (!addon_is_activated($permission_group[0]['parent'])) {
-                                                    $check = false;
-                                                }
-                                            }
-                                        @endphp
-                                        @if ($check)
+                
+                    @php
+                        $check = true;
+                        if (
+                            ($permission_group[0]['parent'] == 'multivendor' && !addon_is_activated('multi_vendor'))
+                            || ($permission_group[0]['parent'] == 'refund' && !addon_is_activated('refund'))
+                        ) {
+                            $check = false;
+                        }
+                    @endphp
+                    @if ($check)
+                        <div class="">
+                            <ul class="list-group">
+                                <li class="list-group-item bg-light" aria-current="true">
+                                    {{ translate(ucwords(str_replace('_', ' ', $permission_group[0]['parent']))) }}
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        @foreach ($permission_group as $key => $permission)
                                             <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
                                                 <div class="p-2 border mt-1 mb-2">
                                                     <label
                                                         class="control-label d-flex">{{ translate(ucwords(str_replace('_', ' ', $permission->name))) }}</label>
                                                     <label class="aiz-switch aiz-switch-success">
-                                                        <input type="checkbox" name="permissions[]"
-                                                            class="form-control demo-sw" value="{{ $permission->id }}"
-                                                            @if ($role->hasPermissionTo($permission->name))
-                                                        checked
-                                        @endif >
-                                        <span class="slider round"></span>
-                                        </label>
-                                </div>
-                    </div>
-                @endif
+                                                        <input type="checkbox" name="permissions[]" class="form-control demo-sw" value="{{ $permission->id }}" @if ($role->hasPermissionTo($permission->name)) checked @endif >
+                                                        <span class="slider round"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        @endforeach
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <br>
+                    @endif
                 @endforeach
+
+                <div class="form-group mb-3 mt-3 text-right">
+                    <button type="submit" class="btn btn-primary">{{ translate('Update') }}</button>
+                </div>
             </div>
-            </li>
-            </ul>
-    </div>
-    <br>
-    @endforeach
-    <div class="form-group mb-3 mt-3 text-right">
-        <button type="submit" class="btn btn-primary">{{ translate('Update') }}</button>
-    </div>
-    </div>
-    </form>
-    <!--===================================================-->
-    <!--End Horizontal Form-->
+        </form>
 
     </div>
 

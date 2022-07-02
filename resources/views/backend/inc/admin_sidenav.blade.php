@@ -177,8 +177,10 @@
                     <li class="aiz-side-nav-item">
                         <a href="#" class="aiz-side-nav-link">
                             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12.444" viewBox="0 0 14 12.444">
-                                <path id="Path_25490" data-name="Path 25490" d="M4.985,6.083,5.6,2H2.4L1.063,5.5A1.227,1.227,0,0,0,1,5.889,1.82,1.82,0,0,0,3,7.444,1.9,1.9,0,0,0,4.985,6.083ZM8,7.444a1.82,1.82,0,0,0,2-1.556c0-.032,0-.064,0-.094L9.6,2H6.4L6,5.792c0,.032,0,.064,0,.1A1.82,1.82,0,0,0,8,7.444Zm3.889.814v3.075H4.111V8.263A3.273,3.273,0,0,1,3,8.456a3.206,3.206,0,0,1-.444-.038v4.938a1.091,1.091,0,0,0,1.087,1.089h8.713a1.093,1.093,0,0,0,1.089-1.089V8.418A3.342,3.342,0,0,1,13,8.456,3.232,3.232,0,0,1,11.889,8.258ZM14.938,5.5,13.6,2H10.4l.614,4.077A1.893,1.893,0,0,0,13,7.444a1.82,1.82,0,0,0,2-1.556A1.249,1.249,0,0,0,14.938,5.5Z" transform="translate(-1 -2)" fill="#707070"/>
-                            </svg>                              
+                                <path id="Path_25490" data-name="Path 25490"
+                                    d="M4.985,6.083,5.6,2H2.4L1.063,5.5A1.227,1.227,0,0,0,1,5.889,1.82,1.82,0,0,0,3,7.444,1.9,1.9,0,0,0,4.985,6.083ZM8,7.444a1.82,1.82,0,0,0,2-1.556c0-.032,0-.064,0-.094L9.6,2H6.4L6,5.792c0,.032,0,.064,0,.1A1.82,1.82,0,0,0,8,7.444Zm3.889.814v3.075H4.111V8.263A3.273,3.273,0,0,1,3,8.456a3.206,3.206,0,0,1-.444-.038v4.938a1.091,1.091,0,0,0,1.087,1.089h8.713a1.093,1.093,0,0,0,1.089-1.089V8.418A3.342,3.342,0,0,1,13,8.456,3.232,3.232,0,0,1,11.889,8.258ZM14.938,5.5,13.6,2H10.4l.614,4.077A1.893,1.893,0,0,0,13,7.444a1.82,1.82,0,0,0,2-1.556A1.249,1.249,0,0,0,14.938,5.5Z"
+                                    transform="translate(-1 -2)" fill="#707070" />
+                            </svg>
                             <span class="aiz-side-nav-text">{{ translate('Seller') }}</span>
                             @if (env('DEMO_MODE') == 'On')
                                 <span class="badge badge-inline badge-danger">Addon</span>
@@ -211,7 +213,7 @@
                             @can('show_commission_log')
                                 <li class="aiz-side-nav-item">
                                     <a href="{{ route('admin.commission_log.index') }}" class="aiz-side-nav-link">
-                                        <span class="aiz-side-nav-text">{{ translate('Commission History') }}</span>
+                                        <span class="aiz-side-nav-text">{{ translate('Earning History') }}</span>
                                     </a>
                                 </li>
                             @endcan
@@ -234,6 +236,52 @@
                     </li>
                 @endif
 
+
+                <!-- Refund -->
+                @if (addon_is_activated('refund'))
+                    <li class="aiz-side-nav-item">
+                        <a href="#" class="aiz-side-nav-link">
+                            <svg id="Group_8930" data-name="Group 8930" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+                                <defs>
+                                    <clipPath id="clip-path">
+                                        <rect id="Rectangle_17178" data-name="Rectangle 17178" width="16" height="16"
+                                            fill="#707070" />
+                                    </clipPath>
+                                </defs>
+                                <g id="Group_23708" data-name="Group 23708" clip-path="url(#clip-path)">
+                                    <path id="Subtraction_80" data-name="Subtraction 80"
+                                        d="M-30-647a5.006,5.006,0,0,1-5-5,5.006,5.006,0,0,1,5-5,5.006,5.006,0,0,1,5,5A5.005,5.005,0,0,1-30-647Zm-1.637-3.979v.409a1.025,1.025,0,0,0,1.023,1.024h.191v.614h.819v-.614h.219a1.025,1.025,0,0,0,1.023-1.024v-.819a1.024,1.024,0,0,0-1.023-1.023h-1.229a.2.2,0,0,1-.2-.205v-.819a.2.2,0,0,1,.2-.2h1.229a.2.2,0,0,1,.205.2v.41h.818v-.41a1.024,1.024,0,0,0-1.023-1.023H-29.6v-.615h-.819v.615h-.191a1.024,1.024,0,0,0-1.023,1.023v.819a1.025,1.025,0,0,0,1.023,1.024h1.229a.205.205,0,0,1,.205.2v.819a.205.205,0,0,1-.205.205h-1.229a.2.2,0,0,1-.2-.205v-.409Z"
+                                        transform="translate(38 660)" fill="#707070" />
+                                    <path id="Path_26789" data-name="Path 26789"
+                                        d="M14.378,3.171H16V1.891H12.18V4.732h1.28V4.085a6.718,6.718,0,1,1-2.691-2.206L11.3.713a8,8,0,1,0,3.082,2.459"
+                                        transform="translate(0 0)" fill="#707070" />
+                                </g>
+                            </svg>
+                            <span class="aiz-side-nav-text">{{ translate('Refund') }}</span>
+                            @if (env('DEMO_MODE') == 'On')
+                                <span class="badge badge-inline badge-danger">Addon</span>
+                            @endif
+                            <span class="aiz-side-nav-arrow"></span>
+                        </a>
+                        <ul class="aiz-side-nav-list level-2">
+                            @can('show_refund_requests')
+                                <li class="aiz-side-nav-item">
+                                    <a href="{{ route('admin.refund_requests') }}" class="aiz-side-nav-link">
+                                        <span class="aiz-side-nav-text">{{ translate('Refund Requests') }}</span>
+                                    </a>
+                                </li>
+                            @endcan
+                            @can('show_refund_requests')
+                                <li class="aiz-side-nav-item">
+                                    <a href="{{ route('admin.refund_settings') }}" class="aiz-side-nav-link">
+                                        <span class="aiz-side-nav-text">{{ translate('Refund Settings') }}</span>
+                                    </a>
+                                </li>
+                            @endcan
+                        </ul>
+                    </li>
+                @endif
                 <!-- marketing -->
                 <li class="aiz-side-nav-item">
                     <a href="#" class="aiz-side-nav-link">
@@ -290,6 +338,37 @@
                         @endcan
                     </ul>
                 </li>
+
+                @if (addon_is_activated('multi_vendor') && get_setting('conversation_system') == 1)
+                    <!-- product query -->
+                    @can('product_query')
+                        @php
+                            $conversation = \App\Models\Conversation::where('receiver_id', Auth::user()->id)
+                                ->where('receiver_viewed', 0)
+                                ->get();
+                        @endphp
+                        <li class="aiz-side-nav-item">
+                            <a href="{{ route('querries.index') }}"
+                                class="aiz-side-nav-link {{ areActiveRoutes(['querries.index', 'querries.show']) }}">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                    <g id="Group_8863" data-name="Group 8863" transform="translate(-4 -4)">
+                                        <path id="Path_18925" data-name="Path 18925"
+                                            d="M18.4,4H5.6A1.593,1.593,0,0,0,4.008,5.6L4,20l3.2-3.2H18.4A1.6,1.6,0,0,0,20,15.2V5.6A1.6,1.6,0,0,0,18.4,4ZM7.2,9.6h9.6v1.6H7.2Zm6.4,4H7.2V12h6.4Zm3.2-4.8H7.2V7.2h9.6Z"
+                                            fill="#707070" />
+                                    </g>
+                                </svg>
+                                <span class="aiz-side-nav-text">{{ translate('Product Querries') }}</span>
+                                @if (count($conversation) > 0)
+                                    <span
+                                        class="badge badge-inline badge-danger p-2">({{ count($conversation) }})</span>
+                                @endif
+                            </a>
+                        </li>
+                    @endcan
+                    <!-- product query -->
+                @endif
+
+
                 <!-- Uploaded Files -->
                 @can('show_uploaded_files')
                     <li class="aiz-side-nav-item">
@@ -400,6 +479,11 @@
                                 </a>
                             </li>
                         @endcan
+                        <li class="aiz-side-nav-item">
+                            <a href="{{ route('settings.otp') }}" class="aiz-side-nav-link">
+                                <span class="aiz-side-nav-text">{{ translate('OTP Settings') }}</span>
+                            </a>
+                        </li>
                         @can('show_languages')
                             <li class="aiz-side-nav-item">
                                 <a href="{{ route('languages.index') }}"
@@ -533,37 +617,39 @@
                     </ul>
                 </li>
 
-                <li class="aiz-side-nav-item">
-                    <a href="#" class="aiz-side-nav-link">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14">
-                            <g id="Group_8869" data-name="Group 8869" transform="translate(-24 -40)">
-                                <path id="Subtraction_36" data-name="Subtraction 36"
-                                    d="M5-525H-9a1,1,0,0,1-1-1v-9a1,1,0,0,1,1-1H5a1,1,0,0,1,1,1v9A1,1,0,0,1,5-525Zm-5.476-9.5a2.5,2.5,0,0,0-1.76.725,2.5,2.5,0,0,0-.651,2.339L-5.624-528.7a1.3,1.3,0,0,0,0,1.825,1.291,1.291,0,0,0,.913.376,1.292,1.292,0,0,0,.912-.376l2.736-2.74a2.489,2.489,0,0,0,.585.07,2.5,2.5,0,0,0,1.754-.719,2.508,2.508,0,0,0,.6-2.541l-.653.653-.408.405a1.1,1.1,0,0,1-.783.325,1.1,1.1,0,0,1-.783-.325,1.1,1.1,0,0,1-.325-.785,1.1,1.1,0,0,1,.325-.782l.4-.408.653-.653a2.481,2.481,0,0,0-.78-.125Z"
-                                    transform="translate(34 576)" fill="#707070" />
-                                <rect id="Rectangle_16228" data-name="Rectangle 16228" width="6" height="1" rx="0.5"
-                                    transform="translate(29 53)" fill="#707070" />
-                            </g>
-                        </svg>
-                        <span class="aiz-side-nav-text">{{ translate('System') }}</span>
-                        <span class="aiz-side-nav-arrow"></span>
-                    </a>
-                    <ul class="aiz-side-nav-list level-2">
-                        @can('system_update')
-                            <li class="aiz-side-nav-item">
-                                <a href="{{ route('system_update') }}" class="aiz-side-nav-link">
-                                    <span class="aiz-side-nav-text">{{ translate('Update') }}</span>
-                                </a>
-                            </li>
-                        @endcan
-                        @can('server_status')
-                            <li class="aiz-side-nav-item">
-                                <a href="{{ route('server_status') }}" class="aiz-side-nav-link">
-                                    <span class="aiz-side-nav-text">{{ translate('Server status') }}</span>
-                                </a>
-                            </li>
-                        @endcan
-                    </ul>
-                </li>
+                @canany(['system_update', 'server_status'])
+                    <li class="aiz-side-nav-item">
+                        <a href="#" class="aiz-side-nav-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14">
+                                <g id="Group_8869" data-name="Group 8869" transform="translate(-24 -40)">
+                                    <path id="Subtraction_36" data-name="Subtraction 36"
+                                        d="M5-525H-9a1,1,0,0,1-1-1v-9a1,1,0,0,1,1-1H5a1,1,0,0,1,1,1v9A1,1,0,0,1,5-525Zm-5.476-9.5a2.5,2.5,0,0,0-1.76.725,2.5,2.5,0,0,0-.651,2.339L-5.624-528.7a1.3,1.3,0,0,0,0,1.825,1.291,1.291,0,0,0,.913.376,1.292,1.292,0,0,0,.912-.376l2.736-2.74a2.489,2.489,0,0,0,.585.07,2.5,2.5,0,0,0,1.754-.719,2.508,2.508,0,0,0,.6-2.541l-.653.653-.408.405a1.1,1.1,0,0,1-.783.325,1.1,1.1,0,0,1-.783-.325,1.1,1.1,0,0,1-.325-.785,1.1,1.1,0,0,1,.325-.782l.4-.408.653-.653a2.481,2.481,0,0,0-.78-.125Z"
+                                        transform="translate(34 576)" fill="#707070" />
+                                    <rect id="Rectangle_16228" data-name="Rectangle 16228" width="6" height="1" rx="0.5"
+                                        transform="translate(29 53)" fill="#707070" />
+                                </g>
+                            </svg>
+                            <span class="aiz-side-nav-text">{{ translate('System') }}</span>
+                            <span class="aiz-side-nav-arrow"></span>
+                        </a>
+                        <ul class="aiz-side-nav-list level-2">
+                            @can('system_update')
+                                <li class="aiz-side-nav-item">
+                                    <a href="{{ route('system_update') }}" class="aiz-side-nav-link">
+                                        <span class="aiz-side-nav-text">{{ translate('Update') }}</span>
+                                    </a>
+                                </li>
+                            @endcan
+                            @can('server_status')
+                                <li class="aiz-side-nav-item">
+                                    <a href="{{ route('server_status') }}" class="aiz-side-nav-link">
+                                        <span class="aiz-side-nav-text">{{ translate('Server status') }}</span>
+                                    </a>
+                                </li>
+                            @endcan
+                        </ul>
+                    </li>
+                @endcanany
 
                 <!-- Addon Manager -->
                 @can('show_addons')
