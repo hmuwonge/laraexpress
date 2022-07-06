@@ -1,7 +1,7 @@
 <template>
 <Header />
-<div class="bg-gray-100 h-screen">
-    <div class="flex justify-between w-full space-x-4  max-w-screen-xl mx-auto py-4">
+<div class="bg-sky-500 h-screen mb-6">
+    <div class="flex justify-between w-full space-x-4 max-w-screen-xl mx-auto py-4">
         <!-- <section class=""> -->
         <Categorymenu class="w-1/5" />
 
@@ -88,27 +88,46 @@
         <!-- </section> -->
     </div>
 
-    <div class="grid  md:grid-cols-2 lg:grid-cols-2 max-w-screen-xl mx-auto rounded-md  mt-1 px-1 gap-2 bg-white">
-
-        <div class="shadow rounded-md py-1   ">
-            <a title="j01" href="#">
-                <img width="" src="http://jumia.laraup.com/upload/images/banner/7299_DB1.jpg" class="w-full rounded-md">
-                <p style="text-align: center;color: #333;font-size: 14px;"></p>
-            </a>
+    <!-- begin product section -->
+    <div class="product-section">
+        <div class="grid grid-cols-4 gap-3 max-w-screen-xl mx-auto p-1">
+            <div class="bg-white rounded-md">
+                <a href="https://jumia.nexup.xyz/flash-sale">
+                    <div class="servicesdzs flex flex-row content-center items-center p-1 justify-start">
+                        <img src="https://jumia.laraup.com/upload/images/services/jumiaone_2.png" alt="Airtime &amp; Bills">
+                         <span class="servicesdz">Airtime &amp; Bills</span></div>
+                </a>
+            </div>
+            <div class="bg-white rounded-md p-2">2</div>
+            <div class="bg-white rounded-md p-2">3</div>
+            <div class="bg-white rounded-md p-2">4</div>
         </div>
 
-        <div class="shadow rounded-md py-1 ">
-            <a title="j01" href="#">
-                <img width="" src="http://jumia.laraup.com/upload/images/banner/7299_DB1.jpg" class="w-full rounded-md">
-                <p style="text-align: center;color: #333;font-size: 14px;"></p>
-            </a>
+        <FlashDeals/>
+
+        <div class="grid  md:grid-cols-2 lg:grid-cols-2 max-w-screen-xl mx-auto rounded-md  mt-1 px-1 gap-2 bg-white">
+
+            <div class="shadow rounded-md py-1">
+                <a title="j01" href="#">
+                    <img width="" src="http://jumia.laraup.com/upload/images/banner/7299_DB1.jpg" class="w-full rounded-md">
+                    <p class="text-sm" style="text-align: center;color: #333;"></p>
+                </a>
+            </div>
+
+            <div class="shadow rounded-md py-1 ">
+                <a title="j01" href="#">
+                    <img width="" src="http://jumia.laraup.com/upload/images/banner/7299_DB1.jpg" class="w-full rounded-md">
+                    <p style="text-align: center;color: #333;font-size: 14px;"></p>
+                </a>
+            </div>
+
         </div>
 
+        <div class="showall space-y-4">
+            <CategoryProducts />
+        </div>
     </div>
 
-    <div class="showall space-y-4">
-        <CategoryProducts/>
-    </div>
 </div>
 </template>
 
@@ -118,6 +137,7 @@ import Categorymenu from "../components/HeroSection/CategoryMenu.vue";
 import Sliders from "../components/HeroSection/HomeSliders";
 import JoinAccount from '../components/HeroSection/JoinAccount.vue'
 import CategoryProducts from '../components/productsSection/CategoryProductsCarousel.vue'
+import FlashDeals from '../components/productsSection/FlashDealsProductsCarousel.vue'
 export default {
     name: "Welcome",
     components: {
@@ -125,7 +145,8 @@ export default {
         Sliders,
         Categorymenu,
         JoinAccount,
-        CategoryProducts
+        CategoryProducts,
+        FlashDeals
     },
 
     props: {},

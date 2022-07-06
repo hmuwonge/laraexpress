@@ -38,15 +38,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 
     <!-- Styles -->
-   <link href="{{ mix('web-assets/css/app.css') }}" rel="stylesheet">
+    <link href="{{ mix('web-assets/css/app.css') }}" rel="stylesheet">
     <!-- Scripts -->
 
-{{--    <script src="{{ mix('web-assets/js/app.js') }}" defer></script>--}}
-{{--    <script src="{{ mix('js/app.js') }}"></script>--}}
+    {{-- <script src="{{ mix('web-assets/js/app.js') }}" defer></script> --}}
+    {{-- <script src="{{ mix('js/app.js') }}"></script> --}}
     <style>
-        /* body,
+        body,
         .v-application {
-            font-family: 'Roboto', sans-serif;
+            body,
+
+            font-family: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica Neue, Arial, sans-serif;
             font-weight: 400;
             line-height: 1.6;
             font-size: 14px;
@@ -55,11 +57,10 @@
         :root {
             --primary: {{ get_setting('base_color', '#e62d04') }};
             --soft-primary: {{ hex2rgba(get_setting('base_color', '#e62d04'), 0.15) }};
-        } */
-
+        }
     </style>
 
-{{--    @include('frontend.inc.pwa')--}}
+    {{-- @include('frontend.inc.pwa') --}}
 
     <script>
         window.shopSetting = @json($settings);
@@ -146,7 +147,7 @@
     @endif
 
     {!! get_setting('footer_script') !!}
-    <script src="{{mix('web-assets/js/app.js')}}" defer></script>
+    <script src="{{ mix('web-assets/js/app.js') }}" defer></script>
     <script src="https://unpkg.com/flowbite@1.4.7/dist/flowbite.js"></script>
 
 </body>

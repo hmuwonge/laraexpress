@@ -1,5 +1,5 @@
 <template>
-<div class="bg-white py-4 rounded-xl hidden lg:block">
+<div class="bg-white py-3 rounded-md hidden lg:block">
 
                 <p class="flex items-center px-4">
                     <CatIcon class="h-6 w-6 mr-2"/>

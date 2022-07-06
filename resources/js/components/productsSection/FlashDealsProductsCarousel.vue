@@ -3,10 +3,30 @@
     <div class="row">
         <div class="grid col-lg-12 col-md-12 col-sm-12 col-xs-12 my-2 bg-red-600 rounded-t-md items-center" style="display: block;display: flex;justify-content: space-between;padding: 10px;">
             <h4 class="hidden-xs" style="color:rgb(0, 0, 0);margin-bottom: 0;">What's on your wrist | Watches from 200/=</h4>
+            <div class="timemiddle flex" ref="offerDate" data-offerdate="1/1/2023">
+                <p>Time Left:</p>
+                <div class="counts flex">
+                    <div class="count_dd ">
+                        <span id="days" class="rounded-full p-1 bg-black text-white">00</span>
+                        <b>d :</b>
+                    </div>
+                    <div class="count_dd">
+                        <span id="hour" class="rounded-full p-1 bg-black text-white">00</span>
+                        <b>h :</b>
+                    </div>
+                    <div class="count_dd">
+                        <span id="minutes" class="rounded-full p-1 bg-black text-white">00</span>
+                        <b>m :</b>
+                    </div>
+                    <div class="count_dd">
+                        <span id="seconds" class="rounded-full p-1 bg-black text-white">00</span>
+                    </div>
+                </div>
+            </div>
             <div class="col -df -j-end -fsh0">
                 <a href="#" class="-df -i-ctr -upp -m -mls -pvxs" style="color:rgb(0, 0, 0);">See All
-                <ChevronRightIcon class="h-1 w-1 text-blue-500" aria-hidden="false"/>
-                <!-- <i class="fa fa-chevron-right" aria-hidden="true"></i> -->
+                    <ChevronRightIcon class="h-1 w-1 text-blue-500" aria-hidden="false" />
+                    <!-- <i class="fa fa-chevron-right" aria-hidden="true"></i> -->
                 </a>
             </div>
         </div>
@@ -60,7 +80,12 @@
 
 <script>
 import "vue3-carousel/dist/carousel.css";
-import { ChevronRightIcon } from '@heroicons/vue/solid'
+import {
+    refs
+} from 'vue';
+import {
+    ChevronRightIcon
+} from '@heroicons/vue/solid'
 import {
     Carousel,
     Slide,
@@ -97,6 +122,49 @@ export default {
             },
         },
     }),
+    // data() {
+    //     return {
+    //         seconds: '00',
+    //         minutes: '00',
+    //         hours: '00',
+    //         days: '00',
+    //         distance: 0,
+    //         countdown: null,
+    //     }
+    // },
+    mounted() {
+        this.countDownTimer();
+    },
+    methods: {
+        countDownTimer() {
+            var offerDate = this.$refs.offerDate;
+            var newDate = offerDate.dataset.offerdate;
+            if (newDate) {
+                var count = new Date(newDate).getTime();
+                var x = setInterval(function () {
+
+                    var now = new Date().getTime();
+                    var time = count - now;
+
+                    var days = Math.floor(time / (1000 * 60 * 60 * 24));
+                    var hours = Math.floor((time % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    var minutes = Math.floor((time % (1000 * 60 * 60)) / (1000 * 60));
+                    var seconds = Math.floor((time % (1000 * 60)) / 1000);
+
+                    document.getElementById("days").innerHTML = days;
+                    document.getElementById("hour").innerHTML = hours;
+                    document.getElementById("minutes").innerHTML = minutes;
+                    document.getElementById("seconds").innerHTML = seconds;
+
+                    if (days < 0) {
+                        clearInterval(x);
+                        document.getElementById("days").innerHTML = "EXPIRED";
+                    }
+                }, 1000);
+                console.log(x)
+            }
+        }
+    }
 }
 </script>
 
@@ -111,11 +179,12 @@ export default {
     /* background-color: #fff; */
 }
 
-li.carousel__slide:hover, .seller-list:hover {
-	transition: all .3s ease 0s;
-	-moz-box-shadow: 0 2px 4px 0 rgb(0 0 0 / 25%);
-	box-shadow: 0 2px 4px 0 rgb(0 0 0 / 25%);
-	transform: scale(1.0);
+li.carousel__slide:hover,
+.seller-list:hover {
+    transition: all .3s ease 0s;
+    -moz-box-shadow: 0 2px 4px 0 rgb(0 0 0 / 25%);
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 25%);
+    transform: scale(1.0);
     transition: ease-in-out;
 }
 

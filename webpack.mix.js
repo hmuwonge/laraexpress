@@ -30,6 +30,6 @@ mix.js("resources/js/app.js", "public/web-assets/js")
 mix.options({
     hmrOptions: {
         host: 'sites.laraexpress.test',  // mysite.test is my local domain used for testing
-        port: '8000',
+        // port: '8000',
     }
     });

@@ -1,8 +1,8 @@
 <template>
-<div class="bg-red-400 h-full sm:h-64 xl:h-80 2xl:h-50 rounded-lg border-2 border-blue-500">
+<div class="h-full sm:h-64 xl:h-80 2xl:h-50">
     <div id="default-carousel" class="relative h-full" data-carousel="slide">
         <!-- Carousel wrapper -->
-        <div class="overflow-hidden relative h-64 rounded-lg sm:h-64 xl:h-80 2xl:h-50">
+        <div class="overflow-hidden relative h-64 rounded-md sm:h-64 xl:h-80 2xl:h-50">
             <!-- Item 1 -->
             <div class="duration-700 h-full ease-in-out absolute inset-0 transition-all transform translate-x-0 z-20" data-carousel-item="">
                 <span class="absolute top-1/2 left-1/2 text-2xl font-semibold text-black-translate-x-1/2 -translate-y-1/2 sm:text-3xl dark:text-gray-800">First Slide</span>
@@ -41,6 +41,6 @@
             </span>
         </button>
     </div>
-    
+
 </div>
 </template>
