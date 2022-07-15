@@ -36,10 +36,11 @@
                 @foreach ($permission_groups as $key => $permission_group)
                     @php
                         $check = true;
-                        if ($permission_group[0]['parent'] == 'multi_vendor') {
-                            if (!addon_is_activated($permission_group[0]['parent'])) {
-                                $check = false;
-                            }
+                        if (
+                            ($permission_group[0]['parent'] == 'multivendor' && !addon_is_activated('multi_vendor'))
+                            || ($permission_group[0]['parent'] == 'refund' && !addon_is_activated('refund'))
+                        ) {
+                            $check = false;
                         }
                     @endphp
                     @if ($check)
@@ -65,18 +66,16 @@
                                     </div>
                                 </li>
                             </ul>
+                        </div>
                     @endif
+                    <br>
+                @endforeach
             </div>
-            <br>
-            @endforeach
 
             <div class="form-group mb-3 mt-3 text-right">
                 <button type="submit" class="btn btn-primary">{{ translate('Save') }}</button>
             </div>
-    </div>
-    </form>
-    <!--===================================================-->
-    <!--End Horizontal Form-->
+        </form>
 
     </div>
 
