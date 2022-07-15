@@ -1,84 +1,89 @@
 <template>
-<Header />
-<div class="bg-sky-500 h-screen mb-6">
+<MainFrame>
+    <div class="bg-sky-500 h-screen mb-6 px-1">
     <div class="flex justify-between w-full space-x-4 max-w-screen-xl mx-auto py-4">
         <!-- <section class=""> -->
         <Categorymenu class="w-1/5" />
 
         <!-- slider section -->
-        <div class="w-3/5 space-y-5 ">
-            <div class="hidden lg:block sm:px-0 px-6 font-bold py-3 sm:py-0">
-                <a href="#" class="hover:text-red-500 hover:font-bold">LIVE</a>
-                <a href="#" class="hover:text-red-500 hover:font-bold">Flash Deals</a>
-                <a href="#" class="hover:text-red-500 hover:font-bold">Stories You'll Love</a>
-                <a href="#" class="hover:text-red-500 hover:font-bold">New user Zone</a>
+        <div class="w-3/5 space-y-5 md:block">
+            <div class="hidden md:block">
+                <div class="hidden lg:block sm:px-0 px-6 font-bold py-3 sm:py-0">
+                    <a href="#" class="hover:text-red-500 hover:font-bold">LIVE</a>
+                    <a href="#" class="hover:text-red-500 hover:font-bold">Flash Deals</a>
+                    <a href="#" class="hover:text-red-500 hover:font-bold">Stories You'll Love</a>
+                    <a href="#" class="hover:text-red-500 hover:font-bold">New user Zone</a>
+                </div>
             </div>
             <!-- Image sliders section -->
             <Sliders />
 
             <!-- welcome section -->
-            <div class=" w-full flex items-center px-6 h-60 bg-gradient-to-r from-yellow-500 to-red-500 rounded-lg">
-                <div class="w-1/4 space-y-8">
-                    <h5 class="font-bold text-white">Welcome newcommers</h5>
-                    <p class="text-white">
-                        Exclusive prices for new users: act now!
-                    </p>
-                    <button class="bg-red-500 text-white py-4 px-2">
-                        Get your coupon
-                    </button>
-                </div>
-                <!-- slider lower section -->
-                <div class="flex w-3/4 space-x-1">
-                    <div class="rounded-lg h-40 py-0 w-28 bg-white ">
-                        <img src="https://ae04.alicdn.com/kf/S75592416283e4801a9044766f51a8bb0B.jpg_120x120Q90.jpg_.webp" alt="" srcset="" />
-
-                        <div class="mx-auto px-4 py-1">
-                            <p class="font-bold text-white bg-red-500 rounded-lg text-sm px-2">
-                                Ush 500
-                            </p>
-                            <p class="w-full text-gray-600 line-through text-sm font-medium">
-                                Ush 500
-                            </p>
-                        </div>
+            <div class="hidden md:block">
+                <div class=" w-full flex items-center px-6 h-60 bg-gradient-to-r from-yellow-500 to-red-500 rounded-lg">
+                    <div class="w-1/4 space-y-8">
+                        <h5 class="font-bold text-white">Welcome newcommers</h5>
+                        <p class="text-white">
+                            Exclusive prices for new users: act now!
+                        </p>
+                        <button class="bg-red-500 text-white py-4 px-2">
+                            Get your coupon
+                        </button>
                     </div>
-                    <div class="rounded-lg h-40 py-0 w-28 bg-white">
-                        <img src="https://ae04.alicdn.com/kf/S75592416283e4801a9044766f51a8bb0B.jpg_120x120Q90.jpg_.webp" alt="" srcset="" />
+                    <!-- slider lower section -->
+                    <div class="flex w-3/4 space-x-1">
+                        <div class="rounded-lg h-40 py-0 w-28 bg-white ">
+                            <img src="https://ae04.alicdn.com/kf/S75592416283e4801a9044766f51a8bb0B.jpg_120x120Q90.jpg_.webp" alt="" srcset="" />
 
-                        <div class="mx-auto px-4 py-1">
-                            <p class="font-bold text-white bg-red-500 rounded-lg text-sm px-2">
-                                Ush 500
-                            </p>
-                            <p class="w-full text-gray-600 line-through text-sm font-medium">
-                                Ush 500
-                            </p>
+                            <div class="mx-auto px-4 py-1">
+                                <p class="font-bold text-white bg-red-500 rounded-lg text-sm px-2">
+                                    Ush 500
+                                </p>
+                                <p class="w-full text-gray-600 line-through text-sm font-medium">
+                                    Ush 500
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="rounded-lg h-40 py-0 w-28 bg-white">
-                        <img src="https://ae04.alicdn.com/kf/S75592416283e4801a9044766f51a8bb0B.jpg_120x120Q90.jpg_.webp" alt="" srcset="" />
+                        <div class="rounded-lg h-40 py-0 w-28 bg-white">
+                            <img src="https://ae04.alicdn.com/kf/S75592416283e4801a9044766f51a8bb0B.jpg_120x120Q90.jpg_.webp" alt="" srcset="" />
 
-                        <div class="mx-auto px-4 py-1">
-                            <p class="font-bold text-white bg-red-500 rounded-lg text-sm px-2">
-                                Ush 500
-                            </p>
-                            <p class="w-full text-gray-600 line-through text-sm font-medium">
-                                Ush 500
-                            </p>
+                            <div class="mx-auto px-4 py-1">
+                                <p class="font-bold text-white bg-red-500 rounded-lg text-sm px-2">
+                                    Ush 500
+                                </p>
+                                <p class="w-full text-gray-600 line-through text-sm font-medium">
+                                    Ush 500
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="rounded-lg h-40 py-0 w-28 bg-white">
-                        <img src="https://ae04.alicdn.com/kf/S75592416283e4801a9044766f51a8bb0B.jpg_120x120Q90.jpg_.webp" alt="" srcset="" />
+                        <div class="rounded-lg h-40 py-0 w-28 bg-white">
+                            <img src="https://ae04.alicdn.com/kf/S75592416283e4801a9044766f51a8bb0B.jpg_120x120Q90.jpg_.webp" alt="" srcset="" />
 
-                        <div class="mx-auto px-4 py-1">
-                            <p class="font-bold text-white bg-red-500 rounded-lg text-sm px-2">
-                                Ush 500
-                            </p>
-                            <p class="w-full text-gray-600 line-through text-sm font-medium">
-                                Ush 500
-                            </p>
+                            <div class="mx-auto px-4 py-1">
+                                <p class="font-bold text-white bg-red-500 rounded-lg text-sm px-2">
+                                    Ush 500
+                                </p>
+                                <p class="w-full text-gray-600 line-through text-sm font-medium">
+                                    Ush 500
+                                </p>
+                            </div>
+                        </div>
+                        <div class="rounded-lg h-40 py-0 w-28 bg-white">
+                            <img src="https://ae04.alicdn.com/kf/S75592416283e4801a9044766f51a8bb0B.jpg_120x120Q90.jpg_.webp" alt="" srcset="" />
+
+                            <div class="mx-auto px-4 py-1">
+                                <p class="font-bold text-white bg-red-500 rounded-lg text-sm px-2">
+                                    Ush 500
+                                </p>
+                                <p class="w-full text-gray-600 line-through text-sm font-medium">
+                                    Ush 500
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
 
         <!-- welcome profile section -->
@@ -95,7 +100,7 @@
                 <a href="https://jumia.nexup.xyz/flash-sale">
                     <div class="servicesdzs flex flex-row content-center items-center p-1 justify-start">
                         <img src="https://jumia.laraup.com/upload/images/services/jumiaone_2.png" alt="Airtime &amp; Bills">
-                         <span class="servicesdz">Airtime &amp; Bills</span></div>
+                        <span class="servicesdz">Airtime &amp; Bills</span></div>
                 </a>
             </div>
             <div class="bg-white rounded-md p-2">2</div>
@@ -103,7 +108,7 @@
             <div class="bg-white rounded-md p-2">4</div>
         </div>
 
-        <FlashDeals/>
+        <FlashDeals />
 
         <div class="grid  md:grid-cols-2 lg:grid-cols-2 max-w-screen-xl mx-auto rounded-md  mt-1 px-1 gap-2 bg-white">
 
@@ -129,9 +134,13 @@
     </div>
 
 </div>
+</MainFrame>
+<!-- <Header /> -->
+
 </template>
 
 <script>
+import MainFrame from './MainFrame.vue'
 import Header from "./Header";
 import Categorymenu from "../components/HeroSection/CategoryMenu.vue";
 import Sliders from "../components/HeroSection/HomeSliders";
@@ -141,6 +150,7 @@ import FlashDeals from '../components/productsSection/FlashDealsProductsCarousel
 export default {
     name: "Welcome",
     components: {
+        MainFrame,
         Header,
         Sliders,
         Categorymenu,
@@ -153,4 +163,10 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+nav.vertical {
+    position: fixed;
+    bottom: 30px;
+    z-index: 9999;
+}
+</style>

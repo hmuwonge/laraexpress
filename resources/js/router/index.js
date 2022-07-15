@@ -1,13 +1,23 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
-import Index from '../components/Index'
+import Home from '../components/frontend/master'
+import Main from '../components/Index.vue'
+import ProductDetails from '../components/productDetails/ProductDetailes.vue'
 
 const routes = [
     {
         path: '/',
-        // path: '/theshop/',
         name: 'home',
-        component: Index
+        component: Main,
+        meta:{
+            title: document.title,
+            transition: 'slide-left'
+        }
+    },
+    {
+        path:'/product/:id',
+        name: 'product',
+        component: ProductDetails
     }
 ];
 

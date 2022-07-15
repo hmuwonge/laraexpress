@@ -1,13 +1,12 @@
 <!doctype html>
+
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-
     <!-- title -->
     <title>{!! $meta['meta_title'] !!}</title>
-
     <!-- meta -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -39,10 +38,8 @@
 
     <!-- Styles -->
     <link href="{{ mix('web-assets/css/app.css') }}" rel="stylesheet">
+    {{-- <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script> --}}
     <!-- Scripts -->
-
-    {{-- <script src="{{ mix('web-assets/js/app.js') }}" defer></script> --}}
-    {{-- <script src="{{ mix('js/app.js') }}"></script> --}}
     <style>
         body,
         .v-application {
@@ -52,6 +49,18 @@
             font-weight: 400;
             line-height: 1.6;
             font-size: 14px;
+        }
+
+        ,
+        .bg-sky-500 {
+            --tw-bg-opacity: 1;
+            background-color: rgb(14 165 233 / var(--tw-bg-opacity));
+        }
+
+        nav.vertical {
+            position: fixed;
+            bottom: 30px;
+            z-index: 9999;
         }
 
         :root {
@@ -117,10 +126,15 @@
 </head>
 
 <body>
+
     <noscript>To run this application, JavaScript is required to be enabled.</noscript>
+
     <div id="app">
-        <router-view></router-view>
+
+        <frontend-master></frontend-master>
+
     </div>
+
 
     @if (get_setting('facebook_chat') == 1)
         <script type="text/javascript">
