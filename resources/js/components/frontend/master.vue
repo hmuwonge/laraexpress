@@ -3,7 +3,7 @@
     <Header />
     <router-view></router-view>
     <!-- <h3>master comp</h3> -->
-     <slot></slot>
+     <!-- <slot></slot> -->
 
 </div>
 </template>
@@ -14,7 +14,7 @@ export default {
 Header
     },
  mounted() {
-        console.log('master called');
+        // console.log('master called');
     },
 }
 

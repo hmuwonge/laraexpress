@@ -48,6 +48,11 @@
                 <div class="my-0 w-1/2 px-1 h-auto flex-auto overflow-hidden bg-white rounded-lg shadow-lg block box-border sm:my-px sm:px-px sm:w-full space-x-2 md:my-px md:px-px md:w-1/2 lg:my-1 lg:px-1 lg:m-2 m-2 lg:w-1/2">
                     <div class="home md:items-center mx-auto md:container md:px-4 flex flex-col gap-x-12 gap-y-0 md:flex-row">
                         <div class="flex-1 relative">
+                            <!-- <VueSlickCarousel class="details-slider" v-bind="slick_settings" ref="c1" :asNavFor="$refs.c2" :focusOnSelect="true">
+                                <div class="thumb" v-for="(image, index) in 5" :key="index">
+                                    <img class="img-fluid" src="https://jumia.laraup.com/upload/images/product/61dcf28427ca8.jpg" :alt="details">
+                                </div>
+                            </VueSlickCarousel> -->
 
                             <div class="large-image  class-honizol hidden">
 
@@ -65,6 +70,24 @@
                                     <img src="https://jumia.laraup.com/upload/images/product/61dcf28427ca8.jpg" alt=""></div>
                                 <div class="flex-1 rounded-lg overflow-hidden hover:opacity-60 cursor-pointer border-4 border-transparent active">
                                     <img src="https://jumia.laraup.com/upload/images/product/61dcf28427ca8.jpg" alt=""></div>
+                                <!-- <VueSlickCarousel class="slider-nav" @afterChange="pageChange" ref="c2" :asNavFor="$refs.c1" :slidesToShow="5" :focusOnSelect="true">
+                                    <template #prevArrow>
+                                        <div class="">
+                                            <span class="mdi mdi-name mdi-chevron-left slick-arrow"></span>
+                                        </div>
+                                    </template>
+
+                                    <div class="thumb" v-for="(image, i) in 5" :key="i" :class="{'active_carousel': currentCarousel == i}">
+                                        <img v-lazy="image" :alt="kfugk" class="img-fluid">
+                                    </div>
+
+                                    <template #nextArrow>
+                                        <div class="custom-arrow">
+                                            <span class="mdi mdi-name mdi-chevron-right slick-arrow"></span>
+                                        </div>
+                                    </template>
+                                </VueSlickCarousel> -->
+
                             </div>
                         </div>
                         <div class="flex-1 px-6 flex flex-col gap-y-4 md:justify-center pb-4">
@@ -388,7 +411,7 @@
                                     </div>
                                     <!-- End item-info -->
                                 </div>
-                                <button id="btn" type="button"  class="bg-[#f68b1e] mt-2 w-full pointer-events-none px-4 relative py-2 justify-center text-white items-center rounded-md shadow-md hover:opacity-60 hover:shadow-2xl"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span>Add to cart</span></button>
+                                <button id="btn" type="button" class="bg-[#f68b1e] mt-2 w-full pointer-events-none px-4 relative py-2 justify-center text-white items-center rounded-md shadow-md hover:opacity-60 hover:shadow-2xl"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span>Add to cart</span></button>
                                 <!-- End item-wrap-inner -->
                             </div>
                         </div>
@@ -401,7 +424,7 @@
                                 <input class="validate" id="wa_email" name="email" required="" type="hidden" value="Raw denim short with sequins" placeholder="Item">
                                 <input class="validate" id="wa_url" name="url" required="" type="hidden" value="https://jumia.laraup.com/product/raw-denim-short-with-sequins">
                                 <a class="whatsapp send_form flex indent-2 relative " href="javascript:void" type="submit" title="Order via WhatsApp">
-                                     <ChatAltIcon class="h-6 w-6 mr-4 fill-orange-400 box-border text-sm" aria-hidden="true" /> Chat</a>
+                                    <ChatAltIcon class="h-6 w-6 mr-4 fill-orange-400 box-border text-sm" aria-hidden="true" /> Chat</a>
                             </form>
                             <!-- End WhatsApp order -->
                         </button>
@@ -416,6 +439,10 @@
 </template>
 
 <script>
+import VueSlickCarousel from 'vue-slick-carousel'
+  import 'vue-slick-carousel/dist/vue-slick-carousel.css'
+  // optional style for arrows & dots
+  import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
 import {
     StarIcon,
     ShoppingCartIcon,
@@ -428,6 +455,7 @@ import MainFrame from '../MainFrame.vue'
 
 export default {
     components: {
+        VueSlickCarousel,
         StarIcon,
         MenuIcon,
         ChatAltIcon,
@@ -437,6 +465,55 @@ export default {
     },
 
     data() {
+        return {
+            clickedSlide: 0,
+            navigation_right: '',
+            navigation_left: '',
+            currentCarousel: '0',
+            added_to_cart: false,
+            firstStock: {
+                stock: 0,
+                sku: '',
+                price: 0,
+                special_discount_check: 0,
+            },
+            activeNav: 'details',
+            hoveredReview: 0,
+            reply_form: 0,
+            replies: 0,
+            paginate: 1,
+            edit: false,
+            review_loading: false,
+            like_loading: false,
+            reply_loading: false,
+            percentages: [],
+            reviews: {
+                data: [],
+                total: 0,
+            },
+            total_price: 0,
+            productView: {
+                slug: this.$route.params.slug,
+            },
+            disable: false,
+            c1: '',
+            c2: '',
+            days: 0,
+            hours: 0,
+            minutes: 0,
+            seconds: 0,
+            slick_settings: {
+                "dots": false,
+                "edgeFriction": 0.35,
+                "infinite": true,
+                "arrows": true,
+                "autoplay": false,
+                "slidesToShow": 1,
+                "slidesToScroll": 1,
+                "prevArrow": '<span class="mdi mdi-name mdi-chevron-left slick-arrow"></span>',
+                "nextArrow": '<span class="mdi mdi-name mdi-chevron-left slick-arrow"></span>',
+            }
+        }
 
     },
     mounted() {
@@ -472,6 +549,11 @@ export default {
             })
 
         }
+    },
+    computed:{
+        pageChange(curr_page) {
+      this.currentCarousel = curr_page;
+    },
     }
 }
 </script>
