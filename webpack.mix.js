@@ -22,7 +22,13 @@ mix.webpackConfig({
     },
 });
 mix.js("resources/js/app.js", "public/web-assets/js")
-    .vue()
+    .vue({
+        options: {
+          compilerOptions: {
+            isCustomElement: (tag) => ['frontend-master'].includes(tag),
+          },
+        },
+      })
     .postCss("resources/css/app.css", "public/web-assets/css", [
         require("tailwindcss"),
     ]);
