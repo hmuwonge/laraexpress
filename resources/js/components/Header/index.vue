@@ -1,7 +1,7 @@
 <template>
 
     <Top/>
-    <div class="flex items-center justify-between container mx-auto md:px-64 bg-white py-3">
+    <div class="flex items-center justify-between container mx-auto md:px-64 bg-white py-3 sticky">
         <Logo/>
         <Search/>
     </div>

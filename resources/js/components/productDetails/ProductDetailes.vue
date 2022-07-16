@@ -44,8 +44,8 @@
                     </ol>
                 </nav>
             </div> -->
-            <div class="flex flex-wrap overflow-hidden sm:-mx-px md:-mx-px lg:-mx-1 xl:-mx-1 justify-between h-auto w-auto">
-                <div class="my-0 w-1/2 px-1 h-auto flex-auto overflow-hidden sm:my-px sm:px-px sm:w-full space-x-2 md:my-px md:px-px md:w-1/2 lg:my-1 lg:px-1 lg:m-2 m-2 lg:w-1/2 bg-white rounded-sm">
+            <div class="flex flex-wrap  mt-[9px] sm:-mx-px md:-mx-px lg:-mx-1 xl:-mx-1 justify-between h-auto w-auto text-sm border-2 border-red-600 space-x-1 border-2 border-red-600">
+                <div class="my-0 w-1/2 px-1 h-auto flex-auto overflow-hidden bg-white rounded-lg shadow-lg block box-border sm:my-px sm:px-px sm:w-full space-x-2 md:my-px md:px-px md:w-1/2 lg:my-1 lg:px-1 lg:m-2 m-2 lg:w-1/2">
                     <div class="home md:items-center mx-auto md:container md:px-4 flex flex-col gap-x-12 gap-y-0 md:flex-row">
                         <div class="flex-1 relative">
 
@@ -112,10 +112,11 @@
 
                 </div>
 
-                <div class="my-1 w-full h-auto overflow-hidden flex-none sm:my-px sm:px-px sm:w-full md:my-px md:px-px md:w-2/6
-                lg:my-0 lg:px-0 lg:w-2/6 rounded-sm items-center p-2 shadow-sm">
-                    <!-- <div class="col4"> -->
-                    <div class="card -mbs -fs12 block relative mt-0 p-2 overflow-auto bg-white">
+                <!-- <div class="my-1 w-full h-auto overflow-hidden flex-none sm:my-px sm:px-px sm:w-full md:my-px md:px-px md:w-2/6
+                lg:my-0 lg:px-0 lg:w-2/6 rounded-sm items-center p-2 shadow-sm"> -->
+                <div class="w-full h-auto flex-none  text-sm sm:my-px sm:px-px sm:w-full md:my-px md:px-px md:basis-1/4
+                lg:my-0 lg:px-0 lg:w-2/6 items-center p-2  rounded-lg shadow-lg block box-border">
+                    <div class="-mbs -fs12 block relative mt-0 p-2 overflow-auto bg-white">
                         <h2 class="text-sm uppercase font-normal p-2 mb-0 box-border border-2">Delivery &amp; Returns</h2>
                         <div class="-hr">
                             <div class="-df -pas">
@@ -213,7 +214,7 @@
                                 <div class="border-b-2">
                                     <div class="show_shipping_cost">
                                         <div class="flex px-1 py-2 text-sm">
-                                            <img class="h-12 w-12 box-border border-2 text-black font-bold" src="https://jumia.laraup.com/upload/images/i1.png">
+                                            <img class="h-10 w-10 box-border mr-1 border-2 text-black font-bold" src="https://jumia.laraup.com/upload/images/i1.png">
                                             <div class="flex flex-wrap grow content-between text-sm">
                                                 <div class="-df -fw">
                                                     <b class="-fs14 -m -prs" style="float: left;">Door Delivery</b>
@@ -225,7 +226,7 @@
                                             </div>
                                         </div>
                                         <div class="flex px-1 py-2 text-sm justify-between">
-                                            <img class="h-12 w-12 box-border border-2 space-x-1 text-black font-bold" src="https://jumia.laraup.com/upload/images/i2.png">
+                                            <img class="h-10 w-10 box-border mr-1 border-2 space-x-1 text-black font-bold" src="https://jumia.laraup.com/upload/images/i2.png">
                                             <div class="flex flex-wrap grow content-between text-sm">
                                                 <div class="-df -fw">
                                                     <b class="-fs14 -m -prs" style="float: left;">Pickup Station</b>
@@ -241,7 +242,7 @@
 
                             </div>
                             <div class="flex px-1 py-2 text-sm">
-                                <img class="h-12 w-12 box-border border-2 text-black font-bold" src="https://jumia.laraup.com/upload/images/i3.png">
+                                <img class="h-10 w-10 box-border mr-1 border-2 text-black font-bold" src="https://jumia.laraup.com/upload/images/i3.png">
                                 <div class="">
                                     <b class="-fs14 -m -prs" style="float: left;">Return Policy</b><br>
                                     <p class="-ptxs">Easy Return, Quick Refund.<a class="_more -mlxs -di" target="_blank" rel="noopener" href="#">See more</a></p>
@@ -250,53 +251,55 @@
                         </div>
                     </div>
 
-                    <div class="mt-2 box-border border-2 text-sm  ">
-                        <section class="shadow-sm rounded-sm bg-white p-2">
-                            <a href="#" class="-pas flex uppercase justify-between border-b-2 cursor-pointer">
-                                <h3 class="-m font-bold">Seller Information</h3>
+                    <div class="mt-2 box-border bg-white text-sm  rounded-sm">
+                        <div class="">
+                            <a href="#" class="p-2 flex uppercase justify-between border-b-2 cursor-pointer">
+                                <h3 class="box-border font-bold">Seller Information</h3>
                                 <i class="fa fa-chevron-right" aria-hidden="true"></i>
                             </a>
                             <div class="-hr box-border block">
                                 <p class="font-bold px-2 py-2 text-black box-border">HOTLancer</p>
-                                <div class="flex  justify-between font-normal py-3 p-[10px] border-b-2 border-b-sky-50 items-center box-border text-base">
-                                    <div class="block text-sm items-left w-2/3 justify-between  box-border">
+                                <div class="flex text-gray-500 justify-between font-normal py-3 p-[10px] border-b-2 border-b-sky-50 items-center box-border text-base">
+                                    <div class="block text-xs items-left w-2/3 justify-between  box-border">
                                         <p><bdo dir="ltr" class="-m -prxs">86% </bdo>Seller Score</p>
                                         <p data-followers=""><span class="-m"> 17 </span><span>Followers</span></p>
                                     </div>
-                                    <a class="inline-block px-6 py-2.5 bg-blue-500 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0
+                                    <a class="inline-block px-6 py-2.5 bg-[#f68b1e] text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0
                                      active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out" href="https://jumia.laraup.com/shop/hotlancer">
                                         Follow
                                     </a>
                                 </div>
                             </div>
-                            <div class="-pas p-2 overflow-auto box-border text-sm">
-                                <h3 class="flex mt-1 -i-ctr p-0 font-bold text-sm">
+                            <div class="-pas p-2 overflow-auto box-border text-xs">
+                                <h3 class="flex mt-1 -i-ctr p-0 font-bold text-xs">
                                     Seller Performance
                                 </h3>
                                 <div class="flex items-center text-left w-full">
                                     <StarIcon class="h-6 w-6 bg-red-600 p-1 mr-1 rounded-full" aria-hidden="false" />
-                                    <p>Order Fulfillment Rate:&nbsp;<span class="font-bold uppercase text-sm">Excellent</span></p>
+                                    <p class="text-gray-500 ">
+                                        Order Fulfillment Rate:&nbsp;
+                                        <span class="font-bold uppercase text-xs text-black">Excellent</span></p>
                                 </div>
                                 <div class="flex items-center text-left w-full">
                                     <StarIcon class="h-6 w-6 bg-red-600 p-1 mr-1 rounded-full" aria-hidden="false" />
-                                    <p>Quality Score:&nbsp;<span class="font-bold uppercase text-sm">Good</span></p>
+                                    <p class="text-gray-500 ">Quality Score:&nbsp;<span class="font-bold uppercase text-xs">Good</span></p>
                                 </div>
                                 <div class="flex items-center text-left w-full">
                                     <StarIcon class="h-6 w-6 bg-red-600 p-1 mr-1 rounded-full" aria-hidden="false" />
-                                    <p>Customer Rating:&nbsp;<span class="font-bold uppercase text-sm">Good</span></p>
+                                    <p class="text-gray-500 ">Customer Rating:&nbsp;<span class="font-bold uppercase text-xs">Good</span></p>
                                 </div>
                             </div>
-                        </section>
+                        </div>
                     </div>
                     <!-- </div> -->
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-md-9 col-xs-12">
+            <div class="flex flex-wrap  mt-[9px] sm:-mx-px md:-mx-px lg:-mx-1 xl:-mx-1 justify-between h-auto w-auto text-sm border-2 border-red-600 space-x-1">
+                <div class="border-2 border-blue-600 my-0 w-1/2  h-auto flex-auto overflow-hidden bg-white rounded-lg shadow-lg block box-border sm:my-px sm:px-px sm:w-full space-x-2 md:my-px md:px-px md:w-1/2 lg:my-1 lg:px-1 lg:m-2 m-2 lg:w-1/2 ">
                     <div class="description data_more_less action_disabled" id="description">
-                        <h2 class="h2description">Description</h2>
-                        <div class="data_more_less_inner" data-height="200" data-increase-by="400" style="max-height: 200px;">
+                        <h2 class="py-3 px-6 border-b border-gray-300 uppercase font-bold text-left">Description</h2>
+                        <div class="py-6 mx-4 box-border text-sm" data-height="200" data-increase-by="400" style="max-height: 200px;">
                             <div class="data_more_less_body">
                                 <h3><strong>Tailored clothes available as in chain stores. Everything is perfect.</strong></h3>
                                 <p>These settings don’t provide big changes but only some small css changes in spaces or borders for example.</p>
@@ -313,75 +316,92 @@
                     </div>
 
                 </div>
-                <div class="col-md-3 col-xs-12 col4 sticky-content">
-                    <nav class="s-menu _sep hidden-xs hidden-sm" data-hash-nav="">
-                        <a href="#description" class="m-itm _wic" data-toggle="tab"><i class="fa fa-file-text-o" aria-hidden="true"></i> Product details</a>
-                        <a href="#specification" class="m-itm _wic" data-toggle="tab"><i class="fa fa-th-list" aria-hidden="true"></i> Specifications</a>
-                        <a href="#feedback" class="m-itm _wic" data-visible="false"><i class="fa fa-commenting-o" aria-hidden="true"></i> Customer Feedback</a>
+
+                <div class="my-1 w-full h-auto overflow-hidden flex-none text-sm sm:my-px sm:px-px sm:w-full md:my-px md:px-px md:basis-1/4
+                lg:my-0 lg:px-0 lg:basis-1/4 items-center p-2  sticky box-border hidden lg:block">
+                    <nav class="s-menu shadow-lg hidden-xs rounded-lg box-border hidden-sm flex flex-col bg-white overflow-hidden" data-hash-nav="">
+                        <a href="#description" class="m-itm flex-shrink-0 py-[12px] p-4 items-center box-border text-sm flex bg-[#ededed]" data-toggle="tab">
+                            <DocumentTextIcon class="h-6 w-6 mr-4 fill-slate-600 box-border text-sm" aria-hidden="true" />
+
+                            Product details</a>
+                        <a href="#specification" class="m-itm flex-shrink-0 py-[12px] p-4 items-center box-border text-sm flex bg-white" data-toggle="tab">
+                            <MenuIcon class="h-6 w-6 mr-4 fill-slate-600 box-border text-sm" aria-hidden="true" /> Specifications</a>
+
+                        <a href="#feedback" class="m-itm flex-shrink-0 py-[12px] p-4 items-center box-border text-sm flex bg-white border-t" data-visible="false">
+                            <ChatAltIcon class="h-6 w-6 mr-4 fill-slate-600 box-border text-sm" aria-hidden="true" /> Customer Feedback</a>
                     </nav>
-                    <div style="background: #fff;display: inline-block;margin-top: 1em;" class="hidden-xs hidden-sm moduletable module so-extraslider-ltr best-seller best-seller-custom">
+                    <div class="bg-white rounded-lg  shadow-lg block p-2 box-border mt-4 hidden-xs hidden-sm moduletable module so-extraslider-ltr best-seller best-seller-custom">
 
-                        <div class="modcontent">
-                            <div id="so_extra_slider" class="so-extraslider buttom-type1 preset00-1 preset01-1 preset02-1 preset03-1 preset04-1 button-type1">
-                                <div class="extraslider-inner ">
-                                    <div class="item ">
-                                        <div class="item-wrap style1 ">
-                                            <div class="item-wrap-inner">
-                                                <div class="media-left">
-                                                    <div class="item-image">
-                                                        <div class="item-img-info product-image-container ">
-                                                            <div class="box-label">
-                                                            </div>
-                                                            <img src="https://jumia.laraup.com/upload/images/product/61d41381102be.jpg" alt="Raw denim short with sequins">
-                                                        </div>
-                                                    </div>
+                        <div class="item">
+                            <div class="box-border flex-col">
+                                <div class="flex box-border text-sm space-y-3">
+                                    <div class="media-left">
+                                        <div class="item-image">
+                                            <div class="item-img-info product-image-container ">
+                                                <div class="box-label">
                                                 </div>
-                                                <div class="media-body">
-                                                    <div class="item-info">
-                                                        <!-- Begin title -->
-                                                        <div class="item-title">
-                                                            <a href="#" target="_self">
-                                                                Raw denim short with sequins
-                                                            </a>
-                                                        </div>
-
-                                                        <div class="price  price-left" style="font-size: 12px;">
-                                                            <!-- Begin ratting -->
-                                                            <div>
-                                                                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span><span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span><span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span><span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span><span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                                                            </div>
-
-                                                            <span class="price-new">$1</span>
-                                                            <span class="price-old">$100.00</span>
-                                                        </div>
-                                                        <div class="price-sale price-right">
-                                                            <span class="discount">
-                                                                -99%
-                                                                <strong>OFF</strong>
-                                                            </span>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                                <!-- End item-info -->
+                                                <img src="https://jumia.laraup.com/upload/images/product/61d41381102be.jpg" alt="Raw denim short with sequins" class="flex-shrink-0 rounded box-border w-[96px] h-[96px]">
                                             </div>
-                                            <button id="btn" type="button" style="height: 49px;margin: 15px auto;width: 90%;display: flex;justify-content: center;align-items: center;background: #124d9d;" class="cart addToCartBtn btn btn-mega btn-lg"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span>Add to cart</span></button>
-                                            <!-- End item-wrap-inner -->
+                                        </div>
+                                    </div>
+                                    <div class="media-body ">
+                                        <div class="pl-2 overflow-hidden box-border block">
+                                            <!-- Begin title -->
+                                            <div class="text-sm text-ellipsis overflow-hidden font-normal m-0 p-0 box-border block">
+                                                <a href="#" target="_self">
+                                                    Raw denim short with sequins
+                                                </a>
+                                            </div>
+
+                                            <div class="box-border text-sm block text-gray-400" style="font-size: 12px;">
+                                                <!-- Begin ratting -->
+                                                <!-- <div>
+                                                    <span class="fa fa-stack">
+                                                        <i class="fa fa-star-o fa-stack-2x"></i>
+                                                    </span>
+                                                    <span class="fa fa-stack">
+                                                        <i class="fa fa-star-o fa-stack-2x"></i>
+                                                    </span>
+                                                    <span class="fa fa-stack">
+                                                        <i class="fa fa-star-o fa-stack-2x"></i>
+                                                    </span>
+                                                    <span class="fa fa-stack">
+                                                        <i class="fa fa-star-o fa-stack-2x"></i>
+                                                    </span>
+                                                    <span class="fa fa-stack">
+                                                        <i class="fa fa-star-o fa-stack-2x"></i>
+                                                    </span>
+                                                </div> -->
+
+                                                <span class="box-border">UGX 200,000</span>
+
+                                            </div>
+                                            <div class="flex box-border">
+                                                <span class="line-through text-xs text-left">$100.00</span>
+                                                <span class="ml-2 min-w-[32px] text-xs bg-[#feefde] font-medium px-1 items-center inline-flex rounded box-border">
+                                                    -99%
+                                                    <strong>OFF</strong>
+                                                </span>
+                                            </div>
                                         </div>
 
                                     </div>
+                                    <!-- End item-info -->
                                 </div>
+                                <button id="btn" type="button"  class="bg-[#f68b1e] mt-2 w-full pointer-events-none px-4 relative py-2 justify-center text-white items-center rounded-md shadow-md hover:opacity-60 hover:shadow-2xl"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span>Add to cart</span></button>
+                                <!-- End item-wrap-inner -->
                             </div>
                         </div>
                     </div>
-                    <div class="card -df -d-co -i-ctr -mtm -pas hidden-xs hidden-sm">
-                        <span class="-pbxs">Questions about this product?</span>
-                        <button class="btn _def _ti -mts">
+                    <div class="bg-white rounded-lg shadow-lg items-center box-border mt-4 p-2 flex flex-col lg:block">
+                        <span class="-pbxs pb-2 box-border text-xs">Questions about this product?</span>
+                        <button class="btn _def _ti mt-2  flex p-0  cursor-pointer uppercase">
                             <!-- WhatsApp order -->
                             <form class="whatsapp-form">
                                 <input class="validate" id="wa_email" name="email" required="" type="hidden" value="Raw denim short with sequins" placeholder="Item">
                                 <input class="validate" id="wa_url" name="url" required="" type="hidden" value="https://jumia.laraup.com/product/raw-denim-short-with-sequins">
-                                <a class="whatsapp send_form" href="javascript:void" type="submit" title="Order via WhatsApp"><i class="fa fa-whatsapp" aria-hidden="true"></i> Chat</a>
+                                <a class="whatsapp send_form flex indent-2 relative " href="javascript:void" type="submit" title="Order via WhatsApp">
+                                     <ChatAltIcon class="h-6 w-6 mr-4 fill-orange-400 box-border text-sm" aria-hidden="true" /> Chat</a>
                             </form>
                             <!-- End WhatsApp order -->
                         </button>
@@ -398,7 +418,10 @@
 <script>
 import {
     StarIcon,
-    ShoppingCartIcon
+    ShoppingCartIcon,
+    DocumentTextIcon,
+    ChatAltIcon,
+    MenuIcon
 } from '@heroicons/vue/solid'
 import MainFrame from '../MainFrame.vue'
 // import ma
@@ -406,6 +429,9 @@ import MainFrame from '../MainFrame.vue'
 export default {
     components: {
         StarIcon,
+        MenuIcon,
+        ChatAltIcon,
+        DocumentTextIcon,
         MainFrame,
         ShoppingCartIcon
     },

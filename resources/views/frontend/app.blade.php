@@ -130,13 +130,9 @@
     <noscript>To run this application, JavaScript is required to be enabled.</noscript>
 
     <div id="app">
-<<<<<<< HEAD
 
         <frontend-master></frontend-master>
 
-=======
-        <theShop></theShop>
->>>>>>> 0aab5ad31db335224140c579432a6154919bf5b4
     </div>
 
 
@@ -165,12 +161,9 @@
     @endif
 
     {!! get_setting('footer_script') !!}
-<<<<<<< HEAD
     <script src="{{ mix('web-assets/js/app.js') }}" defer></script>
     <script src="https://unpkg.com/flowbite@1.4.7/dist/flowbite.js"></script>
 
-=======
->>>>>>> 0aab5ad31db335224140c579432a6154919bf5b4
 </body>
 
 </html>

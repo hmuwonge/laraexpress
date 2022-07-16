@@ -2,7 +2,7 @@
 <div>
     <Header />
 
-     <div class="w-full mx-auto py-4  h-screen bg-[#F2F2F2]">
+     <div class="w-full mx-auto py-4  h-100vh bg-[#F2F2F2]">
 
         <slot></slot>
 

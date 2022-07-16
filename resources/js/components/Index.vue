@@ -1,6 +1,6 @@
 <template>
 <MainFrame>
-    <div class="bg-sky-500 h-screen mb-6 px-1">
+    <div class="bg-sky-500 h-100vh px-1">
     <div class="flex justify-between w-full space-x-4 max-w-screen-xl mx-auto py-4">
         <!-- <section class=""> -->
         <Categorymenu class="w-1/5" />
