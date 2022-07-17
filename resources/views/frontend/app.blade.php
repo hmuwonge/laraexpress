@@ -131,8 +131,8 @@
 
     <div id="app">
 
-        {{-- <frontend-master></frontend-master> --}}
-        <router-view></router-view>
+        <frontend-master></frontend-master>
+        {{-- <router-view></router-view> --}}
 
     </div>
 

@@ -13,8 +13,8 @@
       </div>
     </div> -->
 
-        <div class="w-full space-x-4 max-w-screen-xl mx-auto py-2">
-            <!-- <div class="breadcrumbs space-y-1">
+        <div class="w-full space-x-0 lg:space-x-4 max-w-screen-xl mx-auto py-2">
+            <div class="breadcrumbs space-y-1">
                 <nav class="flex" aria-label="Breadcrumb">
                     <ol class="inline-flex items-center space-x-1 md:space-x-3">
                         <li class="inline-flex items-center">
@@ -43,9 +43,15 @@
                         </li>
                     </ol>
                 </nav>
-            </div> -->
-            <div class="flex flex-wrap  mt-[9px] sm:-mx-px md:-mx-px lg:-mx-1 xl:-mx-1 justify-between h-auto w-auto text-sm border-2 border-red-600 space-x-1 border-2 border-red-600">
-                <div class="my-0 w-1/2 px-1 h-auto flex-auto overflow-hidden bg-white rounded-lg shadow-lg block box-border sm:my-px sm:px-px sm:w-full space-x-2 md:my-px md:px-px md:w-1/2 lg:my-1 lg:px-1 lg:m-2 m-2 lg:w-1/2">
+            </div>
+             <div class="flex flex-wrap  mt-[9px] sm:-mx-px md:-mx-px lg:-mx-1 xl:-mx-1 justify-between h-auto w-auto text-sm space-x-1 border-2 border-sky-600">
+              <!-- <div class="my-0 w-1/2 px-1 h-20 flex-auto overflow-hidden bg-yellow-500 rounded-lg shadow-lg block box-border sm:my-px sm:px-px sm:w-full space-x-2 md:my-px md:px-px md:w-1/2 lg:my-1 lg:px-1 lg:m-2 m-2 lg:w-1/2"></div> -->
+             </div>
+
+            <div class="flex flex-wrap  mt-[9px] sm:-mx-px md:-mx-px  xl:-mx-1 justify-between h-auto w-auto text-sm lg:space-x-1">
+
+                <div class="my-0 w-1/2  h-auto flex-auto overflow-hidden bg-white rounded-lg shadow-sm block
+                box-border sm:my-px sm:px-px sm:w-full space-x-2 md:my-px md:px-px md:w-1/2 lg:my-1 lg:px-1 lg:m-2 m-2 lg:w-1/2">
                     <div class="home md:items-center mx-auto md:container md:px-4 flex flex-col gap-x-12 gap-y-0 md:flex-row">
                         <div class="flex-1 relative">
                             <!-- <VueSlickCarousel class="details-slider" v-bind="slick_settings" ref="c1" :asNavFor="$refs.c2" :focusOnSelect="true">
@@ -54,22 +60,30 @@
                                 </div>
                             </VueSlickCarousel> -->
 
-                            <div class="large-image  class-honizol hidden">
+                            <!-- <div class="large-image  class-honizol hidden">
 
                                 <img class="product-image-zoom" ref="largeImage" src="https://jumia.laraup.com/upload/images/product/61dcf28427ca8.jpg" data-zoom-image="https://jumia.laraup.com/upload/images/product/61dcf28427ca8.jpg" title="image">
-                            </div>
+                            </div> -->
                             <img src="https://jumia.laraup.com/upload/images/product/61dcf28427ca8.jpg" class="object-cover md:rounded-lg" alt="">
-                            <button class="md:hidden absolute top-1/3 left-6 rounded-full w-14 h-14 bg-white"><i class="fas fa-chevron-left text-black text-xl hover:text-orange"></i></button><button class="md:hidden absolute top-1/3 right-4 rounded-full w-14 h-14 bg-white"><i class="fas fa-chevron-right text-black text-xl hover:text-orange"></i></button>
+                            <button class="md:hidden absolute top-1/3 left-6 rounded-full w-14 h-14 bg-white">
+                            <i class="fas fa-chevron-left text-black text-xl hover:text-orange"></i>
+                            </button>
+                            <button class="md:hidden absolute top-1/3 right-4 rounded-full w-14 h-14 bg-white">
+                            <i class="fas fa-chevron-right text-black text-xl hover:text-orange"></i></button>
 
-                            <div id="thumb-slider" ref="thumbSlider" class="md:flex gap-x-4 mt-4">
+                            <div id="thumb-slider" ref="thumbSlider" class="flex md:flex sm:flex sm:gap-x-1 space-y-2 gap-x-4 mt-4 border-2 border-blue-400">
                                 <div class="flex-1 rounded-lg overflow-hidden hover:opacity-60 cursor-pointer border-4 border-transparent">
-                                    <img src="https://jumia.laraup.com/upload/images/product/61dcf28427ca8.jpg" alt=""></div>
+                                    <img src="https://jumia.laraup.com/upload/images/product/61dcf28427ca8.jpg" alt=""/>
+                                    </div>
                                 <div class="flex-1 rounded-lg overflow-hidden hover:opacity-60 cursor-pointer border-4 border-transparent">
-                                    <img src="https://thirsty-curran-9a11c0.netlify.app/img/image-product-3-thumbnail.c6ec7433.jpg" alt=""></div>
+                                    <img src="https://thirsty-curran-9a11c0.netlify.app/img/image-product-3-thumbnail.c6ec7433.jpg" alt="">
+                                    </div>
                                 <div class="flex-1 rounded-lg overflow-hidden hover:opacity-60 cursor-pointer border-4 border-transparent">
-                                    <img src="https://jumia.laraup.com/upload/images/product/61dcf28427ca8.jpg" alt=""></div>
+                                    <img src="https://jumia.laraup.com/upload/images/product/61dcf28427ca8.jpg" alt="">
+                                    </div>
                                 <div class="flex-1 rounded-lg overflow-hidden hover:opacity-60 cursor-pointer border-4 border-transparent active">
-                                    <img src="https://jumia.laraup.com/upload/images/product/61dcf28427ca8.jpg" alt=""></div>
+                                    <img src="https://jumia.laraup.com/upload/images/product/61dcf28427ca8.jpg" alt="">
+                                    </div>
                                 <!-- <VueSlickCarousel class="slider-nav" @afterChange="pageChange" ref="c2" :asNavFor="$refs.c1" :slidesToShow="5" :focusOnSelect="true">
                                     <template #prevArrow>
                                         <div class="">
@@ -125,8 +139,8 @@
                                 </div> -->
                                 <button class="bg-[#f68b1e] flex flex-1 py-2 justify-center text-white items-center rounded-md gap-x-2 shadow-md hover:opacity-60 hover:shadow-2xl">
                                     <ShoppingCartIcon class="h-6 w-6 " />
-                                    <!-- <i class="fas fa-shopping-cart text-white text-xl"></i> -->
-                                    <span class="text-white font-bold">Add to Cart</span></button>
+                                    <span class="text-white font-bold">Add to Cart</span>
+                                    </button>
                             </div>
 
                             <div class="border-b-2 my-1"></div>
@@ -137,24 +151,26 @@
 
                 <!-- <div class="my-1 w-full h-auto overflow-hidden flex-none sm:my-px sm:px-px sm:w-full md:my-px md:px-px md:w-2/6
                 lg:my-0 lg:px-0 lg:w-2/6 rounded-sm items-center p-2 shadow-sm"> -->
-                <div class="w-full h-auto flex-none  text-sm sm:my-px sm:px-px sm:w-full md:my-px md:px-px md:basis-1/4
-                lg:my-0 lg:px-0 lg:w-2/6 items-center p-2  rounded-lg shadow-lg block box-border">
-                    <div class="-mbs -fs12 block relative mt-0 p-2 overflow-auto bg-white">
-                        <h2 class="text-sm uppercase font-normal p-2 mb-0 box-border border-2">Delivery &amp; Returns</h2>
+                <div class="w-full h-auto overflow-hidden flex-none text-sm sm:my-px sm:px-px sm:w-full md:my-px md:px-px md:basis-1/4
+                lg:my-0 lg:px-0 lg:basis-1/4 items-center p-2  sticky box-border">
+
+                    <div class="-mbs text-sm block rounded-lg relative overflow-auto bg-white">
+                        <h2 class="text-sm uppercase font-normal p-2 mb-0 box-border border-b-2">Delivery &amp; Returns</h2>
                         <div class="-hr">
-                            <div class="-df -pas">
-                                <div class="-df -d-co -c-bet">
-                                    <img class="-fw hidden-xs" src="https://jumia.laraup.com/upload/images/ex.png">
+                            <div class="flex p-2">
+                                <div class="flex -d-co justify-between">
+                                    <img class="font-normal lg:block" src="https://jumia.laraup.com/upload/images/ex.png">
                                     <p style="color: #282828;">Express delivery in main cities.&nbsp;</p>
                                 </div>
                             </div>
                         </div>
+
                         <div class="box-border relative block">
-                            <div class="select2-container w-full">
-                                <h3 class="font-normal text-xl">Choose your location</h3>
+                            <div class="select2-container w-full p-2 border-b-2">
+                                <h3 class="font-normal text-xl my-2 uppercase">Choose your location</h3>
 
                                 <div class="mb-4 ">
-                                    <select onchange="get_city(this.value)" class=" w-full select2-dropdownl select2-selection--single" id="state" data-select2-id="state" tabindex="-1" aria-hidden="true">
+                                    <select onchange="get_city(this.value)" class=" w-full select2-dropdownl select2-selection--single my-2" id="state" data-select2-id="state" tabindex="-1" aria-hidden="true">
                                         <option value="337">Bagar Hat</option>
                                         <option value="338">Bandarban</option>
                                         <option value="339">Barguna</option>
@@ -234,29 +250,29 @@
                                             <span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-show_city-container"><span class="select2-selection__rendered" id="select2-show_city-container" role="textbox" aria-readonly="true" title="Select first state">Select first state</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
                                 </div>
 
-                                <div class="border-b-2">
+                                <div class="">
                                     <div class="show_shipping_cost">
-                                        <div class="flex px-1 py-2 text-sm">
-                                            <img class="h-10 w-10 box-border mr-1 border-2 text-black font-bold" src="https://jumia.laraup.com/upload/images/i1.png">
+                                        <div class="flex  py-2 text-sm">
+                                            <img class="h-10 w-10 box-border mr-1 border-[1px] text-gray-500 font-bold" src="https://jumia.laraup.com/upload/images/i1.png">
                                             <div class="flex flex-wrap grow content-between text-sm">
                                                 <div class="-df -fw">
-                                                    <b class="-fs14 -m -prs" style="float: left;">Door Delivery</b>
+                                                    <b class="text-sm -m -prs font-normal" style="float: left;">Door Delivery</b>
                                                 </div>
                                                 <div>
-                                                    <div class="markup -ptxs">Shipping <em>$50.00</em></div>
-                                                    <div class="markup -ptxs">Delivery by <em>8</em> when you order within next <em>20hrs 8mins</em></div>
+                                                    <div class="text-gray-500 -ptxs text-xs">Shipping <em>$50.00</em></div>
+                                                    <div class="text-gray-500 -ptxs text-xs">Delivery by <em>8</em> when you order within next <em>20hrs 8mins</em></div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="flex px-1 py-2 text-sm justify-between">
-                                            <img class="h-10 w-10 box-border mr-1 border-2 space-x-1 text-black font-bold" src="https://jumia.laraup.com/upload/images/i2.png">
+                                            <img class="h-10 w-10 box-border mr-1 border-[1px] space-x-1 text-gray-500 font-bold" src="https://jumia.laraup.com/upload/images/i2.png">
                                             <div class="flex flex-wrap grow content-between text-sm">
-                                                <div class="-df -fw">
-                                                    <b class="-fs14 -m -prs" style="float: left;">Pickup Station</b>
+                                                <div class="flex l">
+                                                    <b class="text-sm -m -prs text-left font-normal">Pickup Station</b>
                                                 </div>
                                                 <div>
-                                                    <div class="markup -ptxs">Shipping <em>$55.00</em></div>
-                                                    <div class="markup -ptxs">Pickup by <em>8</em> when you order within next <em>20hrs 8mins</em></div>
+                                                    <div class="text-gray-500 -ptxs text-xs">Shipping <em>$55.00</em></div>
+                                                    <div class="text-gray-500 -ptxs text-xs">Pickup by <em>8</em> when you order within next <em>20hrs 8mins</em></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -264,17 +280,18 @@
                                 </div>
 
                             </div>
+
                             <div class="flex px-1 py-2 text-sm">
-                                <img class="h-10 w-10 box-border mr-1 border-2 text-black font-bold" src="https://jumia.laraup.com/upload/images/i3.png">
+                                <img class="h-10 w-10 box-border mr-1 border-[1px] text-gray-500 font-bold" src="https://jumia.laraup.com/upload/images/i3.png">
                                 <div class="">
-                                    <b class="-fs14 -m -prs" style="float: left;">Return Policy</b><br>
-                                    <p class="-ptxs">Easy Return, Quick Refund.<a class="_more -mlxs -di" target="_blank" rel="noopener" href="#">See more</a></p>
+                                    <b class="text-sm font-normal -m -prs" style="float: left;">Return Policy</b><br>
+                                    <p class="text-xs">Easy Return, Quick Refund.<a class="_more -mlxs -di" target="_blank" rel="noopener" href="#">See more</a></p>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="mt-2 box-border bg-white text-sm  rounded-sm">
+                    <div class="mt-2 box-border bg-white text-sm  rounded-lg">
                         <div class="">
                             <a href="#" class="p-2 flex uppercase justify-between border-b-2 cursor-pointer">
                                 <h3 class="box-border font-bold">Seller Information</h3>
@@ -297,18 +314,19 @@
                                 <h3 class="flex mt-1 -i-ctr p-0 font-bold text-xs">
                                     Seller Performance
                                 </h3>
-                                <div class="flex items-center text-left w-full">
-                                    <StarIcon class="h-6 w-6 bg-red-600 p-1 mr-1 rounded-full" aria-hidden="false" />
+
+                                <div class="flex items-center text-left w-full my-2">
+                                    <StarIcon class="h-6 w-6  text-white p-[1px] mr-1 rounded-full bg-red-400" aria-hidden="false" />
                                     <p class="text-gray-500 ">
                                         Order Fulfillment Rate:&nbsp;
                                         <span class="font-bold uppercase text-xs text-black">Excellent</span></p>
                                 </div>
-                                <div class="flex items-center text-left w-full">
-                                    <StarIcon class="h-6 w-6 bg-red-600 p-1 mr-1 rounded-full" aria-hidden="false" />
+                                <div class="flex items-center text-left w-full my-2">
+                                    <StarIcon class="h-6 w-6 bg-red-40 p-[1px] mr-1 rounded-full" aria-hidden="false" />
                                     <p class="text-gray-500 ">Quality Score:&nbsp;<span class="font-bold uppercase text-xs">Good</span></p>
                                 </div>
                                 <div class="flex items-center text-left w-full">
-                                    <StarIcon class="h-6 w-6 bg-red-600 p-1 mr-1 rounded-full" aria-hidden="false" />
+                                    <StarIcon class="h-6 w-6 bg-red-40 p-[1px] mr-1 rounded-full" aria-hidden="false" />
                                     <p class="text-gray-500 ">Customer Rating:&nbsp;<span class="font-bold uppercase text-xs">Good</span></p>
                                 </div>
                             </div>
@@ -318,8 +336,11 @@
                 </div>
             </div>
 
-            <div class="flex flex-wrap  mt-[9px] sm:-mx-px md:-mx-px lg:-mx-1 xl:-mx-1 justify-between h-auto w-auto text-sm border-2 border-red-600 space-x-1">
-                <div class="border-2 border-blue-600 my-0 w-1/2  h-auto flex-auto overflow-hidden bg-white rounded-lg shadow-lg block box-border sm:my-px sm:px-px sm:w-full space-x-2 md:my-px md:px-px md:w-1/2 lg:my-1 lg:px-1 lg:m-2 m-2 lg:w-1/2 ">
+            <div class="flex flex-wrap  mt-[9px] sm:-mx-px md:-mx-px lg:-mx-1 xl:-mx-1 justify-between h-auto w-auto text-sm">
+
+                <div class=" my-0 w-1/2  h-auto flex-auto overflow-hidden bg-white rounded-lg shadow-lg block
+                box-border sm:my-px sm:px-px sm:w-full space-x-2 md:my-px md:px-px md:w-1/2 lg:my-1 lg:px-1 lg:m-2 m-2 lg:w-1/2 ">
+
                     <div class="description data_more_less action_disabled" id="description">
                         <h2 class="py-3 px-6 border-b border-gray-300 uppercase font-bold text-left">Description</h2>
                         <div class="py-6 mx-4 box-border text-sm" data-height="200" data-increase-by="400" style="max-height: 200px;">
@@ -340,9 +361,9 @@
 
                 </div>
 
-                <div class="my-1 w-full h-auto overflow-hidden flex-none text-sm sm:my-px sm:px-px sm:w-full md:my-px md:px-px md:basis-1/4
+                <div class=" w-full h-auto overflow-hidden flex-none text-sm sm:my-px sm:px-px sm:w-full md:my-px md:px-px md:basis-1/4
                 lg:my-0 lg:px-0 lg:basis-1/4 items-center p-2  sticky box-border hidden lg:block">
-                    <nav class="s-menu shadow-lg hidden-xs rounded-lg box-border hidden-sm flex flex-col bg-white overflow-hidden" data-hash-nav="">
+                    <nav class="s-menu shadow-sm hidden-xs rounded-lg box-border hidden-sm flex flex-col bg-white overflow-hidden" data-hash-nav="">
                         <a href="#description" class="m-itm flex-shrink-0 py-[12px] p-4 items-center box-border text-sm flex bg-[#ededed]" data-toggle="tab">
                             <DocumentTextIcon class="h-6 w-6 mr-4 fill-slate-600 box-border text-sm" aria-hidden="true" />
 
@@ -353,7 +374,7 @@
                         <a href="#feedback" class="m-itm flex-shrink-0 py-[12px] p-4 items-center box-border text-sm flex bg-white border-t" data-visible="false">
                             <ChatAltIcon class="h-6 w-6 mr-4 fill-slate-600 box-border text-sm" aria-hidden="true" /> Customer Feedback</a>
                     </nav>
-                    <div class="bg-white rounded-lg  shadow-lg block p-2 box-border mt-4 hidden-xs hidden-sm moduletable module so-extraslider-ltr best-seller best-seller-custom">
+                    <div class="bg-white rounded-lg  shadow-sm block p-2 box-border mt-4 hidden-xs hidden-sm moduletable module so-extraslider-ltr best-seller best-seller-custom">
 
                         <div class="item">
                             <div class="box-border flex-col">
@@ -401,7 +422,7 @@
                                             </div>
                                             <div class="flex box-border">
                                                 <span class="line-through text-xs text-left">$100.00</span>
-                                                <span class="ml-2 min-w-[32px] text-xs bg-[#feefde] font-medium px-1 items-center inline-flex rounded box-border">
+                                                <span class="ml-2 min-w-[32px] text-xs bg-[#f68b1e] text-orange-200 p-1 font-medium px-1 items-center inline-flex rounded box-border">
                                                     -99%
                                                     <strong>OFF</strong>
                                                 </span>
@@ -416,7 +437,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="bg-white rounded-lg shadow-lg items-center box-border mt-4 p-2 flex flex-col lg:block">
+                    <div class="bg-white rounded-lg shadow-sm items-center box-border mt-4 p-2 flex flex-col lg:block">
                         <span class="-pbxs pb-2 box-border text-xs">Questions about this product?</span>
                         <button class="btn _def _ti mt-2  flex p-0  cursor-pointer uppercase">
                             <!-- WhatsApp order -->

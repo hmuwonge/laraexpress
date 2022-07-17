@@ -1,6 +1,6 @@
 <template>
     <div>
-        <header class="bg-gray-100">
+        <header class="bg-gray-100 hidden lg:block">
         <nav class="container mx-auto px-8">
             <ul class="flex justify-end space-x-8 py-3 text-sm">
                 <li>
