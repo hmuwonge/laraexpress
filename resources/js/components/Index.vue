@@ -1,12 +1,12 @@
 <template>
 <MainFrame>
     <div class="bg-sky-500 h-100vh px-1">
-    <div class="flex justify-between w-full space-x-4 max-w-screen-xl mx-auto py-4">
+    <div class="flex justify-between w-full lg:space-x-4 max-w-screen-xl mx-auto py-4">
         <!-- <section class=""> -->
         <Categorymenu class="w-1/5" />
 
         <!-- slider section -->
-        <div class="w-3/5 space-y-5 md:block">
+        <div class="w-full lg:w-3/5 lg:space-y-5 md:block md:w-full sm:w-full">
             <div class="hidden md:block">
                 <div class="hidden lg:block sm:px-0 px-6 font-bold py-3 sm:py-0">
                     <a href="#" class="hover:text-red-500 hover:font-bold">LIVE</a>
@@ -19,7 +19,7 @@
             <Sliders />
 
             <!-- welcome section -->
-            <div class="hidden md:block">
+            <div class="hidden md:block sm:hidden">
                 <div class=" w-full flex items-center px-6 h-60 bg-gradient-to-r from-yellow-500 to-red-500 rounded-lg">
                     <div class="w-1/4 space-y-8">
                         <h5 class="font-bold text-white">Welcome newcommers</h5>
@@ -98,7 +98,7 @@
         <div class="grid grid-cols-4 gap-3 max-w-screen-xl mx-auto p-1">
             <div class="bg-white rounded-md">
                 <a href="https://jumia.nexup.xyz/flash-sale">
-                    <div class="servicesdzs flex flex-row content-center items-center p-1 justify-start">
+                    <div class="servicesdzs flex flex-row sm:flex-row content-center items-center p-1 justify-start">
                         <img src="https://jumia.laraup.com/upload/images/services/jumiaone_2.png" alt="Airtime &amp; Bills">
                         <span class="servicesdz">Airtime &amp; Bills</span></div>
                 </a>

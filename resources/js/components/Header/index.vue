@@ -52,7 +52,7 @@
     </header>
 </div>
 
-<div class="sdw _open left-0 top-0 bottom-0 fixed overflow-y-auto block bg-white box-border z-[90] w-[87vw]" :class="isOpen ? 'block -translate-x-4' : 'hidden'">
+<div class="sdw _open left-0 top-0 bottom-0 fixed overflow-y-auto block bg-white box-border z-[90] w-[87vw]" :class="isOpen ? 'block transform -translate-x-4' : 'hidden'">
     <div class="p-4 box-border flex normal-case border-b-2">
         <XIcon @click="closeMenu()" class="h-6 w-6 mr-4 text-gray-700 box-border font-bold text-sm overflow-hidden items-center block cursor-pointer" aria-hidden="false" aria-label="Close side drawer" />
 
