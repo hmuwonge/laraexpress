@@ -65,48 +65,48 @@
         <ChatAltIcon class="h-6 w-6 mr-4 text-slate-600 box-border text-sm" aria-hidden="true" />
         Live Help
         </button>
-        
+
         <a href="/customer/account/index/" class="text-xs py-2 px-4 items-center relative min-h-[40px] justify-between flex normal-case bg-transparent box-border text-yellow-400">
         <span class="-b -or5 -upp">My LaraExpress account</span>
 
          <ChevronRightIcon class="h-6 w-6 mr-4 text-slate-600 box-border text-sm" aria-hidden="true" />
         </a>
-        
+
         <a href="/customer/order/index/" class="sdl">
         <svg class="ic" width="24" height="24">
-            <use href="https://www.jumia.ug/assets_hy/images/i-icons.f394608b.svg#orders"></use>
+            <use href="#orders"></use>
         </svg>Orders</a><a href="/customer/reviewsratings/index/" class="sdl"><svg class="ic" width="24" height="24">
-            <use href="https://www.jumia.ug/assets_hy/images/i-icons.f394608b.svg#reviews"></use>
+            <use href="#reviews"></use>
         </svg>Pending Reviews</a><a href="/customer/coupon/index/" class="sdl"><svg class="ic" width="24" height="24">
-            <use href="https://www.jumia.ug/assets_hy/images/i-icons.f394608b.svg#vouchers"></use>
+            <use href="#vouchers"></use>
         </svg>Jumia Credit</a><a href="/customer/wishlist/index/" class="sdl"><svg class="ic" width="24" height="24">
-            <use href="https://www.jumia.ug/assets_hy/images/i-icons.f394608b.svg#saved-items"></use>
+            <use href="#saved-items"></use>
         </svg>Saved Items</a><a href="/categories/navigation/" class="sdtl"><span class="-b -or5 -upp">Our Categories</span><span class="-und">See All</span></a><a href="/groceries/" class="sdl"><svg class="ic" width="24" height="24">
-            <use href="https://www.jumia.ug/assets_hy/images/i-icons.f394608b.svg#cat-groceries"></use>
+            <use href="#cat-groceries"></use>
         </svg>Supermarket</a><a href="/phones-tablets/" class="sdl"><svg class="ic" width="24" height="24">
-            <use href="https://www.jumia.ug/assets_hy/images/i-icons.f394608b.svg#cat-mobile"></use>
+            <use href="#cat-mobile"></use>
         </svg>Phones &amp; Tablets</a><a href="/home-office/" class="sdl"><svg class="ic" width="24" height="24">
-            <use href="https://www.jumia.ug/assets_hy/images/i-icons.f394608b.svg#cat-appliance"></use>
+            <use href="#cat-appliance"></use>
         </svg>Home &amp; Office</a><a href="/electronics/" class="sdl"><svg class="ic" width="24" height="24">
-            <use href="https://www.jumia.ug/assets_hy/images/i-icons.f394608b.svg#cat-tv"></use>
+            <use href="#cat-tv"></use>
         </svg>Electronics</a><a href="/health-beauty/" class="sdl"><svg class="ic" width="24" height="24">
-            <use href="https://www.jumia.ug/assets_hy/images/i-icons.f394608b.svg#cat-health"></use>
+            <use href="#cat-health"></use>
         </svg>Health &amp; Beauty</a><a href="/category-fashion-by-jumia/" class="sdl"><svg class="ic" width="24" height="24">
-            <use href="https://www.jumia.ug/assets_hy/images/i-icons.f394608b.svg#cat-fashion"></use>
+            <use href="#cat-fashion"></use>
         </svg>Fashion</a><a href="/computing/" class="sdl"><svg class="ic" width="24" height="24">
-            <use href="https://www.jumia.ug/assets_hy/images/i-icons.f394608b.svg#cat-computing"></use>
+            <use href="#cat-computing"></use>
         </svg>Computing</a><a href="/sporting-goods/" class="sdl"><svg class="ic" width="24" height="24">
-            <use href="https://www.jumia.ug/assets_hy/images/i-icons.f394608b.svg#cat-fitness"></use>
+            <use href="#cat-fitness"></use>
         </svg>Sporting Goods</a><a href="/patio-lawn-garden/" class="sdl"><svg class="ic" width="24" height="24">
-            <use href="https://www.jumia.ug/assets_hy/images/i-icons.f394608b.svg#cat-garden"></use>
+            <use href="#cat-garden"></use>
         </svg>Garden &amp; Outdoors</a><a href="/video-games/" class="sdl"><svg class="ic" width="24" height="24">
-            <use href="https://www.jumia.ug/assets_hy/images/i-icons.f394608b.svg#cat-games"></use>
+            <use href="#cat-games"></use>
         </svg>Gaming</a><a href="/our-services/" class="sdtl"><span class="-b -or5 -upp">Our Services</span><span class="-und">See All</span></a><a href="/mlp-jumia-prime/" class="sdl" target="_blank" rel="noopener"><svg class="ic" width="24" height="24">
-            <use href="https://www.jumia.ug/assets_hy/images/i-icons.f394608b.svg#services"></use>
+            <use href="#services"></use>
         </svg>Jumia Prime</a><a href="https://5ey6.adj.st/?adjust_t=8t895ve_7uo0yhw&amp;adjust_deeplink=jumiafood%3A%2F%2F" class="sdl" target="_blank" rel="noopener"><svg class="ic" width="24" height="24">
-            <use href="https://www.jumia.ug/assets_hy/images/i-icons.f394608b.svg#food"></use>
+            <use href="#food"></use>
         </svg>Jumia Food</a><a href="https://5ey6.adj.st/?adjust_t=8t895ve_7uo0yhw&amp;adjust_deeplink=jumiafood%3A%2F%2F" class="sdl" target="_blank" rel="noopener"><svg class="ic" width="24" height="24">
-            <use href="https://www.jumia.ug/assets_hy/images/i-icons.f394608b.svg#party"></use>
+            <use href="#party"></use>
         </svg>Jumia Party</a><a href="/sell-on-jumia/" class="sdl -hr">Sell on Jumia</a><a href="/faq/" class="sdl">Help Center</a><a href="/contact/" class="sdl">Contact us</a>
 </div>
 </template>
@@ -145,6 +145,7 @@ export default {
     },
     methods: {
         openMenu() {
+            console.log('open');
             return (this.isOpen = true);
         },
 

@@ -538,38 +538,38 @@ export default {
 
     },
     mounted() {
-        this.image();
+        // this.image();
 
     },
     methods: {
-        image() {
-            const _ = require('lodash');
-            const $ = require('jquery');
-            const magnificPopup = require('magnific-popup');
-            var largeImage = this.$refs.largeImage;
-            $('.large-image').magnificPopup({
-                items: [{
-                    src: 'https://jumia.laraup.com/upload/images/product/61dcf28427ca8.jpg'
-                }, ],
-                gallery: {
-                    enabled: true,
-                    preload: [0, 2]
-                },
-                type: 'image',
-                mainClass: 'mfp-fade',
-                callbacks: {
-                    open: function () {
+        // image() {
+        //     const _ = require('lodash');
+        //     const $ = require('jquery');
+        //     const magnificPopup = require('magnific-popup');
+        //     var largeImage = this.$refs.largeImage;
+        //     $('.large-image').magnificPopup({
+        //         items: [{
+        //             src: 'https://jumia.laraup.com/upload/images/product/61dcf28427ca8.jpg'
+        //         }, ],
+        //         gallery: {
+        //             enabled: true,
+        //             preload: [0, 2]
+        //         },
+        //         type: 'image',
+        //         mainClass: 'mfp-fade',
+        //         callbacks: {
+        //             open: function () {
 
-                        // var getIndex = this.$refs.thumbSlider;
+        //                 // var getIndex = this.$refs.thumbSlider;
 
-                        var activeIndex = parseInt($('#thumb-slider .img.active').attr('data-index'));
-                        var magnificPopup = $.magnificPopup.instance;
-                        magnificPopup.goTo(activeIndex);
-                    }
-                }
-            })
+        //                 var activeIndex = parseInt($('#thumb-slider .img.active').attr('data-index'));
+        //                 var magnificPopup = $.magnificPopup.instance;
+        //                 magnificPopup.goTo(activeIndex);
+        //             }
+        //         }
+        //     })
 
-        }
+        // }
     },
     computed:{
         pageChange(curr_page) {
