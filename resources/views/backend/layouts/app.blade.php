@@ -60,9 +60,6 @@
 </head>
 
 <body class="">
-    @php
-        CoreComponentRepository::instantiateShopRepository();
-    @endphp
     <div class="aiz-main-wrapper">
         @include('backend.inc.admin_sidenav')
         <div class="aiz-content-wrapper">

@@ -168,9 +168,7 @@
 </div>
 </div>
 </div>
-@php
-CoreComponentRepository::instantiateShopRepository();
-@endphp
+
 @endsection
 
 @section('modal')

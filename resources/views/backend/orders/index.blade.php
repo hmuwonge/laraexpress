@@ -1,9 +1,7 @@
 @extends('backend.layouts.app')
 
 @section('content')
-    @php
-    CoreComponentRepository::instantiateShopRepository();
-    @endphp
+   
     <div class="card">
         <form class="" id="sort_orders" action="" method="GET">
             <div class="card-header row gutters-5">

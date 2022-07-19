@@ -13,9 +13,7 @@
             </div>
         </div>
     </div>
-    @php
-    CoreComponentRepository::instantiateShopRepository();
-    @endphp
+
     <div class="card">
         <form id="sort_uploads" action="">
             <div class="card-header row gutters-5">

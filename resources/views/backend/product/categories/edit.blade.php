@@ -20,9 +20,7 @@
                             </li>
                         @endforeach
                     </ul>
-                    @php
-                        CoreComponentRepository::instantiateShopRepository();
-                    @endphp
+
                     <form class="p-4" action="{{ route('categories.update', $category->id) }}" method="POST"
                         enctype="multipart/form-data">
                         <input name="_method" type="hidden" value="PATCH">

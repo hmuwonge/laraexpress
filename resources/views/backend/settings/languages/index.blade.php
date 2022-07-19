@@ -3,9 +3,7 @@
 @section('content')
 
     @can('show_languages')
-        @php
-        CoreComponentRepository::instantiateShopRepository();
-        @endphp
+
         <div class="row">
             <div class="col-lg-6">
                 <div class="card">

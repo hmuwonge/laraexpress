@@ -1,9 +1,7 @@
 @extends('backend.layouts.app')
 
 @section('content')
-    @php
-    CoreComponentRepository::instantiateShopRepository();
-    @endphp
+
     @can('show_currencies')
         <div class="row">
             <div class="col-lg-6">

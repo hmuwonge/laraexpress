@@ -30,9 +30,7 @@
                         </div>
                     </form>
 
-                    @php
-                        CoreComponentRepository::instantiateShopRepository();
-                    @endphp
+
                 </div>
             </div>
         </div>
