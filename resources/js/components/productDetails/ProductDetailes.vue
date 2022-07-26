@@ -48,7 +48,7 @@
               <!-- <div class="my-0 w-1/2 px-1 h-20 flex-auto overflow-hidden bg-yellow-500 rounded-lg shadow-lg block box-border sm:my-px sm:px-px sm:w-full space-x-2 md:my-px md:px-px md:w-1/2 lg:my-1 lg:px-1 lg:m-2 m-2 lg:w-1/2"></div> -->
              </div>
 
-            <div class="flex flex-wrap  mt-[9px] sm:-mx-px md:-mx-px  xl:-mx-1 justify-between h-auto w-auto text-sm lg:space-x-1">
+            <div class="p-row">
 
                 <div class="my-0 w-1/2  h-auto flex-auto overflow-hidden bg-white rounded-lg shadow-sm block
                 box-border sm:my-px sm:px-px sm:w-full space-x-2 md:my-px md:px-px md:w-1/2 lg:my-1 lg:px-1 lg:m-2 m-2 lg:w-1/2">
@@ -84,23 +84,7 @@
                                 <div class="flex-1 rounded-lg overflow-hidden hover:opacity-60 cursor-pointer border-4 border-transparent active">
                                     <img src="https://jumia.laraup.com/upload/images/product/61dcf28427ca8.jpg" alt="">
                                     </div>
-                                <!-- <VueSlickCarousel class="slider-nav" @afterChange="pageChange" ref="c2" :asNavFor="$refs.c1" :slidesToShow="5" :focusOnSelect="true">
-                                    <template #prevArrow>
-                                        <div class="">
-                                            <span class="mdi mdi-name mdi-chevron-left slick-arrow"></span>
-                                        </div>
-                                    </template>
 
-                                    <div class="thumb" v-for="(image, i) in 5" :key="i" :class="{'active_carousel': currentCarousel == i}">
-                                        <img v-lazy="image" :alt="kfugk" class="img-fluid">
-                                    </div>
-
-                                    <template #nextArrow>
-                                        <div class="custom-arrow">
-                                            <span class="mdi mdi-name mdi-chevron-right slick-arrow"></span>
-                                        </div>
-                                    </template>
-                                </VueSlickCarousel> -->
 
                             </div>
                         </div>
@@ -151,10 +135,9 @@
 
                 <!-- <div class="my-1 w-full h-auto overflow-hidden flex-none sm:my-px sm:px-px sm:w-full md:my-px md:px-px md:w-2/6
                 lg:my-0 lg:px-0 lg:w-2/6 rounded-sm items-center p-2 shadow-sm"> -->
-                <div class="w-full h-auto overflow-hidden flex-none text-sm sm:my-px sm:px-px sm:w-full md:my-px md:px-px md:basis-1/4
-                lg:my-0 lg:px-0 lg:basis-1/4 items-center p-2  sticky box-border">
+                <div class="p-col3">
 
-                    <div class="-mbs text-sm block rounded-lg relative overflow-auto bg-white">
+                    <div class="text-sm block rounded-lg relative overflow-auto bg-white">
                         <h2 class="text-sm uppercase font-normal p-2 mb-0 box-border border-b-2">Delivery &amp; Returns</h2>
                         <div class="-hr">
                             <div class="flex p-2">
@@ -336,9 +319,9 @@
                 </div>
             </div>
 
-            <div class="flex flex-wrap  mt-[9px] sm:-mx-px md:-mx-px lg:-mx-1 xl:-mx-1 justify-between h-auto w-auto text-sm">
+            <div class="p-row">
 
-                <div class=" my-0 w-1/2  h-auto flex-auto overflow-hidden bg-white rounded-lg shadow-lg block
+                <div class=" my-0 w-1/2  h-auto flex-auto overflow-hidden bg-white rounded-lg shadow-sm block
                 box-border sm:my-px sm:px-px sm:w-full space-x-2 md:my-px md:px-px md:w-1/2 lg:my-1 lg:px-1 lg:m-2 m-2 lg:w-1/2 ">
 
                     <div class="description data_more_less action_disabled" id="description">
@@ -363,6 +346,7 @@
 
                 <div class=" w-full h-auto overflow-hidden flex-none text-sm sm:my-px sm:px-px sm:w-full md:my-px md:px-px md:basis-1/4
                 lg:my-0 lg:px-0 lg:basis-1/4 items-center p-2  sticky box-border hidden lg:block">
+
                     <nav class="s-menu shadow-sm hidden-xs rounded-lg box-border hidden-sm flex flex-col bg-white overflow-hidden" data-hash-nav="">
                         <a href="#description" class="m-itm flex-shrink-0 py-[12px] p-4 items-center box-border text-sm flex bg-[#ededed]" data-toggle="tab">
                             <DocumentTextIcon class="h-6 w-6 mr-4 fill-slate-600 box-border text-sm" aria-hidden="true" />
@@ -374,7 +358,9 @@
                         <a href="#feedback" class="m-itm flex-shrink-0 py-[12px] p-4 items-center box-border text-sm flex bg-white border-t" data-visible="false">
                             <ChatAltIcon class="h-6 w-6 mr-4 fill-slate-600 box-border text-sm" aria-hidden="true" /> Customer Feedback</a>
                     </nav>
-                    <div class="bg-white rounded-lg  shadow-sm block p-2 box-border mt-4 hidden-xs hidden-sm moduletable module so-extraslider-ltr best-seller best-seller-custom">
+
+                    <div class="bg-white rounded-lg  shadow-sm block p-2 box-border mt-4 hidden-xs hidden-sm moduletable module so-extraslider-ltr best-seller
+                    best-seller-custom">
 
                         <div class="item">
                             <div class="box-border flex-col">
@@ -384,7 +370,8 @@
                                             <div class="item-img-info product-image-container ">
                                                 <div class="box-label">
                                                 </div>
-                                                <img src="https://jumia.laraup.com/upload/images/product/61d41381102be.jpg" alt="Raw denim short with sequins" class="flex-shrink-0 rounded box-border w-[96px] h-[96px]">
+                                                <img src="https://jumia.laraup.com/upload/images/product/61d41381102be.jpg" alt="Raw denim short with sequins"
+                                                class="flex-shrink-0 rounded box-border w-[96px] h-[96px]">
                                             </div>
                                         </div>
                                     </div>
@@ -542,34 +529,52 @@ export default {
 
     },
     methods: {
-        // image() {
-        //     const _ = require('lodash');
-        //     const $ = require('jquery');
-        //     const magnificPopup = require('magnific-popup');
-        //     var largeImage = this.$refs.largeImage;
-        //     $('.large-image').magnificPopup({
-        //         items: [{
-        //             src: 'https://jumia.laraup.com/upload/images/product/61dcf28427ca8.jpg'
-        //         }, ],
-        //         gallery: {
-        //             enabled: true,
-        //             preload: [0, 2]
-        //         },
-        //         type: 'image',
-        //         mainClass: 'mfp-fade',
-        //         callbacks: {
-        //             open: function () {
+        image() {
+            // const _ = require('lodash');
+            // const $ = require('jquery');
+            // const magnificPopup = require('magnific-popup');
+            // var largeImage = this.$refs.largeImage;
+            // $('.large-image').magnificPopup({
+            //     items: [{
+            //         src: 'https://jumia.laraup.com/upload/images/product/61dcf28427ca8.jpg'
+            //     }, ],
+            //     gallery: {
+            //         enabled: true,
+            //         preload: [0, 2]
+            //     },
+            //     type: 'image',
+            //     mainClass: 'mfp-fade',
+            //     callbacks: {
+            //         open: function () {
 
-        //                 // var getIndex = this.$refs.thumbSlider;
+            //             var getIndex = this.$refs.thumbSlider;
 
-        //                 var activeIndex = parseInt($('#thumb-slider .img.active').attr('data-index'));
-        //                 var magnificPopup = $.magnificPopup.instance;
-        //                 magnificPopup.goTo(activeIndex);
-        //             }
-        //         }
-        //     })
+            //             var activeIndex = parseInt($('#thumb-slider .img.active').attr('data-index'));
+            //             var magnificPopup = $.magnificPopup.instance;
+            //             magnificPopup.goTo(activeIndex);
+            //         }
+            //     }
+            // })
 
-        // }
+             $('.large-image').magnificPopup({
+        items: [
+          {src: 'https://jumia.laraup.com/upload/images/product/61dcf28427ca8.jpg' },
+                        ],
+        gallery: { enabled: true, preload: [0,2] },
+        type: 'image',
+        mainClass: 'mfp-fade',
+        callbacks: {
+          open: function() {
+
+            var activeIndex = parseInt($('#thumb-slider .img.active').attr('data-index'));
+            var magnificPopup = $.magnificPopup.instance;
+            magnificPopup.goTo(activeIndex);
+          }
+        }
+      });
+        }
+
+
     },
     computed:{
         pageChange(curr_page) {
@@ -582,6 +587,15 @@ export default {
 <style scoped>
 .select2-dropdown {
     @apply absolute block w-auto box-border bg-white border-solid border-2 border-gray-600 z-50 float-left;
+}
+
+.p-row{
+    @apply flex flex-wrap  mt-[9px] sm:-mx-px md:-mx-px  xl:-mx-1 justify-between h-auto w-auto text-sm lg:space-x-1;
+}
+
+.p-col3{
+    @apply w-full h-auto overflow-hidden flex-none text-sm sm:my-px sm:px-px sm:w-full md:my-px md:px-px md:basis-1/4
+                lg:my-0 lg:px-0 lg:basis-1/4 items-center p-2  sticky box-border;
 }
 
 .breadcrumbs {

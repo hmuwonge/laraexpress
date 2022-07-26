@@ -32,7 +32,7 @@ use App\Http\Controllers\SubscriberController;
 use App\Http\Controllers\TaxController;
 use App\Http\Controllers\UpdateController;
 use App\Http\Controllers\ZoneController;
-use App\Addons\MultiVendor\Http\Controllers\MultiVendorController;
+// use App\Addons\MultiVendor\Http\Controllers\MultiVendorController;
 
 /*
 |--------------------------------------------------------------------------
@@ -251,4 +251,4 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'admin']], function 
     Route::get('/update/step1', [UpdateController::class, 'step1']);
 });
 
-Route::get('/addons/multivendor', [MultiVendorController::class, 'helloFromMultiVendor']);
+// Route::get('/addons/multivendor', [MultiVendorController::class, 'helloFromMultiVendor']);

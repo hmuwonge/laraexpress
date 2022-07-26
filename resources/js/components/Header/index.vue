@@ -1,7 +1,7 @@
 <template>
 <div class="hidden lg:block">
     <Top />
-    <div class="flex items-center justify-between container mx-auto md:px-64 bg-white py-3 sticky">
+    <div class="flex items-center justify-between container mx-auto md:px-64 bg-white py-3 main-header fixed top-0">
         <Logo />
         <Search />
     </div>
@@ -156,6 +156,9 @@ export default {
 };
 </script>
 <style scoped>
+.main-header {
+    @apply sticky z-[70] top-0 shadow-sm;
+}
 .sdl {
     padding-bottom: 12px;
     padding-top: 12px;

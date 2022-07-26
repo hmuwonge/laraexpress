@@ -23,10 +23,10 @@
     <div class="d-flex justify-content-between align-items-stretch flex-grow-xl-1">
         <div class="d-none d-md-flex justify-content-around align-items-center align-items-stretch">
              <div class="aiz-topbar-item align-items-center">
-            <a class="btn btn-outline-secondary border-gray-300 d-flex align-items-center px-3" href="{{ route('cache.clear')}}">
+            {{-- <a class="btn btn-outline-secondary border-gray-300 d-flex align-items-center px-3" href="{{ route('cache.clear')}}">
                     <i class="las la-hdd opacity-60"></i>
                     <span class="fw-500 fs-13 ml-2 mr-0 opacity-60">{{ translate('Clear Cache') }}</span>
-                </a>
+                </a> --}}
             </div>
 
             <div class="aiz-topbar-item align-items-center ml-3">
@@ -37,7 +37,7 @@
             </div>
             <div class="aiz-topbar-item align-items-center dropdown ml-3 mr-0 ">
                 <a class="btn btn-outline-secondary border-gray-300 d-flex align-items-center px-3" href="javascript:void(0);" data-toggle="dropdown">
-                    <i class="las la-plus ts-08 opacity-60"></i>                            
+                    <i class="las la-plus ts-08 opacity-60"></i>
                     <span class="fw-500 fs-13 ml-2 mr-0 opacity-60">{{ translate('Add New') }}</span>
                 </a>
                 <div class="dropdown-menu p-3">

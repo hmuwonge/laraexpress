@@ -1,5 +1,5 @@
 <template>
-<div class="w-full py-6 bg-white rounded-lg">
+<div class="w-full py-6 bg-white rounded-lg overflow-hidden">
     <div class="mx-auto bg-gray-300 rounded-full h-16 w-16 bg-[url('https://ae01.alicdn.com/kf/Hf768b4fa794e44bfb7cc86e4a528a035h.png')]"></div>
     <p class="font-bold text-lg text-center py-2">Welcome to LaraExpress</p>
     <div class="flex justify-around items-center mt-4">
@@ -7,7 +7,7 @@
         <button class="text-black font-bold bg-gray-200 px-8 py-1 rounded-full">Sign In</button>
     </div>
 
-    <div class="rounded-lg bg-yellow-300 h-96 my-8 mx-4 p-3 py-6 space-y-40 bg-[url('https://ae01.alicdn.com/kf/H4d1fc82a600f4c51b3a3b4c7a5edb3a6G.jpg_Q90.jpg_.webp')]">
+    <div class="rounded-lg bg-yellow-300 h-[270px] my-8 mx-4 p-3 py-6 space-y-4 bg-[url('https://ae01.alicdn.com/kf/H4d1fc82a600f4c51b3a3b4c7a5edb3a6G.jpg_Q90.jpg_.webp')]">
         <div>
             <p class="text-sm text-white">Exclusive Offers</p>
             <h3 class="text-xl font-bold text-white">Just for new LaraExpress users</h3>

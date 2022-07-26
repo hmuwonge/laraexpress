@@ -480,9 +480,9 @@
                             </li>
                         @endcan
                         <li class="aiz-side-nav-item">
-                            <a href="{{ route('settings.otp') }}" class="aiz-side-nav-link">
+                            {{-- <a href="{{ route('settings.otp') }}" class="aiz-side-nav-link">
                                 <span class="aiz-side-nav-text">{{ translate('OTP Settings') }}</span>
-                            </a>
+                            </a> --}}
                         </li>
                         @can('show_languages')
                             <li class="aiz-side-nav-item">

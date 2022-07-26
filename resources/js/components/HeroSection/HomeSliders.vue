@@ -1,46 +1,132 @@
 <template>
-<div class="lg:h-full sm:h-10 xl:h-80 2xl:h-50 sm:w-full md:w-full sm:basis-full sm:max-w-[100%] sm:min-w-[100%] box-border ">
-    <div id="default-carousel" class="relative h-full" data-carousel="slide">
+<div class="h-[270px] xl:h-[270px] 2xl:h-[270px]  sm:h-10 sm:w-full md:w-full sm:basis-full sm:max-w-[100%] rounded-md  sm:min-w-[100%] box-border">
+
+    <div class="h-full w-full box-border">
         <!-- Carousel wrapper -->
-        <div class="overflow-hidden relative h-64 rounded-md sm:h-64 xl:h-80 2xl:h-50">
+        <div class="relative">
             <!-- Item 1 -->
-            <div class="duration-700 h-full ease-in-out absolute inset-0 transition-all transform translate-x-0 z-20" data-carousel-item="">
-                <span class="absolute top-1/2 left-1/2 text-2xl font-semibold text-black-translate-x-1/2 -translate-y-1/2 sm:text-3xl dark:text-gray-800">First Slide</span>
-                <img src="https://ae01.alicdn.com/kf/H963baeb18cf34790824e4b02e05f39abe.jpg_Q90.jpg_webp" class="block absolute top-1/2 left-1/2 h-full w-full -translate-x-1/2 -translate-y-1/2" alt="...">
-            </div>
-            <!-- Item 2 -->
-            <div class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-full z-10 h-full" data-carousel-item="">
-                <img src="https://ae01.alicdn.com/kf/Sdaac9c71ac56435eb1f10764cf4421efK.png_.webp" class="block absolute top-1/2 left-1/2 h-full w-full -translate-x-1/2 -translate-y-1/2" alt="...">
-            </div>
-            <!-- Item 3 -->
-            <div class="duration-700 ease-in-out absolute inset-0 transition-all transform -translate-x-full z-10 h-full" data-carousel-item="">
-                <img src="https://ae01.alicdn.com/kf/H963baeb18cf34790824e4b02e05f39abe.jpg_Q90.jpg_webp" class="block absolute top-1/2 left-1/2 h-full w-full -translate-x-1/2 -translate-y-1/2" alt="...">
-            </div>
+            <carousel :items-to-show="1.5" :settings="settings" :breakpoints="breakpoints" :nav="true" class="">
+
+                <slide v-for="slide in sliders" :key="slide">
+                    <div class="carousel__item rounded-md">
+
+                        <div class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-0 z-20">
+                            <!-- <span class="absolute top-1/2 left-1/2 text-2xl font-semibold text-black-translate-x-1/2 -translate-y-1/2 sm:text-3xl dark:text-gray-800">First Slide</span> -->
+                            <img :src="slide" class="block absolute rounded-md top-1/2 left-1/2 w-full h-full -translate-x-1/2 -translate-y-1/2"
+                            alt="...">
+                        </div>
+                    </div>
+                </slide>
+
+                <template #addons>
+                    <navigation />
+                    <pagination class="relative p-0 m-0 z-50 -mt-6 items-center justify-center "/>
+                </template>
+            </carousel>
         </div>
-        <!-- Slider indicators -->
-        <div class="flex absolute bottom-5 left-1/2 z-30 space-x-3 -translate-x-1/2">
-            <button type="button" class="w-3 h-3 rounded-full bg-red-500 dark:bg-gray-800" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-            <button type="button" class="w-3 h-3 rounded-full bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-            <button type="button" class="w-3 h-3 rounded-full bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-        </div>
-        <!-- Slider controls -->
-        <button type="button" class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev="">
-            <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
-                </svg>
-                <span class="hidden">Previous</span>
-            </span>
-        </button>
-        <button type="button" class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-next="">
-            <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                </svg>
-                <span class="hidden">Next</span>
-            </span>
-        </button>
     </div>
 
 </div>
 </template>
+
+<script>
+import "vue3-carousel/dist/carousel.css";
+import {
+    Carousel,
+    Slide,
+    Pagination,
+    Navigation
+} from "vue3-carousel";
+
+export default {
+    name: "App",
+    components: {
+        Carousel,
+        Slide,
+        Pagination,
+        Navigation,
+    },
+    data() {
+        return {
+            seconds: '00',
+            minutes: '00',
+            hours: '00',
+            days: '00',
+            distance: 0,
+            countdown: null,
+
+            // carousel settings
+            settings: {
+                itemsToShow: 1,
+                snapAlign: "center",
+            },
+            // breakpoints are mobile first
+            // any settings not specified will fallback to the carousel settings
+            breakpoints: {
+                // 700px and up
+                700: {
+                    itemsToShow: 1.5,
+                    snapAlign: "center",
+                },
+                // 1024 and up
+                1024: {
+                    itemsToShow: 1,
+                    snapAlign: "start",
+                },
+            },
+
+            sliders: [
+                'https://ae01.alicdn.com/kf/Sdaac9c71ac56435eb1f10764cf4421efK.png_.webp',
+                'https://ae01.alicdn.com/kf/H963baeb18cf34790824e4b02e05f39abe.jpg_Q90.jpg_webp',
+                "https://ae01.alicdn.com/kf/H963baeb18cf34790824e4b02e05f39abe.jpg_Q90.jpg_webp"
+            ]
+        }
+    },
+    // data: () => ({
+    //     // carousel settings
+
+    // }),
+};
+</script>
+
+<style scoped>
+.carousel__item {
+    @apply h-[270px] xl:h-[270px] 2xl:h-[270px] w-full text-sm flex justify-center items-center bg-transparent;
+}
+
+.carousel__slide {
+    /* padding: 10px; */
+}
+
+.carousel__prev{
+    left: 11px !important;
+}
+
+.carousel__next {
+    top: 50%;
+    right: 11px !important;
+    transform: translate(50%, -50%);
+    background: url(//ae01.alicdn.com/kf/H3a2170950d3848dd85531682a4dc5ef21.png) no-repeat;
+}
+.carousel__prev,
+.carousel__next {
+    box-sizing: content-box;
+    border: 3px solid white;
+    color: aliceblue;
+    top: 50%;
+    transform: translate(50%, -50%);
+}
+
+.carousel__prev--in-active,
+.carousel__next--in-active {
+    display: none;
+}
+.carousel__pagination {
+    @apply text-white;
+    z-index: unset;
+}
+</style>
+
+<style scoped>
+.home-banner {}
+</style>

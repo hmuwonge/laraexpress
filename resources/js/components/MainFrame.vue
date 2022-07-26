@@ -1,8 +1,8 @@
 <template>
 <div>
-    <Header />
+    <Header class="main-header"/>
 
-     <div class="w-full mx-auto py-4  h-100vh bg-[#F2F2F2]">
+     <div class="w-full mx-auto py-0  h-100vh bg-[#F2F2F2]">
 
         <slot></slot>
 
@@ -18,3 +18,8 @@ export default {
     }
 }
 </script>
+<style scoped>
+.main-header {
+    @apply sticky z-[70] top-0 shadow-sm;
+}
+</style>

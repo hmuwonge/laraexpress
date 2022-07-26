@@ -2,7 +2,7 @@
 <div class="max-w-screen-xl mx-auto rounded-md bg-white space-x-4 px-0">
     <div class="row">
         <div class="grid col-lg-12 col-md-12 col-sm-12 col-xs-12 my-2 bg-red-600 rounded-t-md items-center" style="display: block;display: flex;justify-content: space-between;padding: 10px;">
-            <h4 class="hidden-xs" style="color:rgb(0, 0, 0);margin-bottom: 0;">What's on your wrist | Watches from 200/=</h4>
+            <h4 class="hidden-xs  text-white mb-0 text-sm" >What's on your wrist | Watches from 200/=</h4>
             <div class="timemiddle flex" ref="offerDate" data-offerdate="1/1/2023">
                 <p>Time Left:</p>
                 <div class="counts flex">
@@ -33,8 +33,8 @@
 
         <carousel :items-to-show="2" :settings="settings" :breakpoints="breakpoints" :auto-play="true">
             <slide v-for="slide in 20" :key="slide">
-                <div class="carousel__item flex justify-center items-center w-full text-sm text-gray-300 my-1 ">
-                    <div class="hover:shadow-sm rounded-sm cloned mr-1">
+                <div class="carousel__item flex justify-center flex-shrink-0 box-border items-center w-full text-sm text-gray-300 my-1 ">
+                    <div class=" rounded-sm cloned mr-1">
                         <div class="item-inner product-thumb trg transition product-layout">
                             <div class="product-item-container">
                                 <div class="left-block">
@@ -44,7 +44,8 @@
                                             <span class="label-sale off top-0 right-0 rounded-tl-md rounded-br-md left-auto h-6 absolute text-white bg-gradient-to-r from-red-500 to-yellow-500">-50%</span>
                                         </div>
                                         <a class="lt-image" href="http://jumia.laraup.com/product/fashion-style-bodycon-vest-dress-maroon">
-                                            <img height="200" src="http://jumia.laraup.com/upload/images/product/61da8225302c7.jpg" class="img-1 img-responsive rounded-md">
+                                            <img height="200" src="http://jumia.laraup.com/upload/images/product/61da8225302c7.jpg" class="img-1
+                                            img-responsive rounded-md">
                                         </a>
                                         <img src="http://jumia.laraup.com/upload/images/img_type/5.png" class="officialstores">
                                     </div>
@@ -53,11 +54,13 @@
                                     <div class="caption">
                                         <h4 style="height: 40px;font-size: 1em;line-height: 20px;text-overflow: ellipsis;border-bottom: 0;
                                         overflow: hidden;margin-bottom: 3px;">
-                                            <a style="color: black;float: left;text-align: left;" href="http://jumia.laraup.com/product/fashion-style-bodycon-vest-dress-maroon">Fashion &amp; Style Bodycon Vest Dress - Mar...</a></h4>
-                                        <div class="row total-price clearfix" style="visibility: visible; display: block;">
-                                            <div class="col-md-12 price" style="min-height: 40px;text-align: left;display: block;line-height: 20px;padding: 0;top: 0px;">
+                                            <a style="color: black;float: left;text-align: left;" href="http://jumia.laraup.com/product/fashion-style-bodycon-vest-dress-maroon">
+                                            Fashion &amp; Style Bodycon...</a>
+                                            </h4>
+                                        <div class="row total-price clearfix visible block">
+                                            <div class="col-md-12 price" style="min-height: 30px;text-align: left;display: block;line-height: 20px;padding: 0;top: 0px;">
                                                 <span class="price-new" style="font-size: 1em;color: #75757a;">$ 750</span><br>
-                                                <span class="price-old" style="margin: 0;">$ 1499.00</span>
+                                                <span class="price-old line-through" style="margin: 0;">$ 1499.00</span>
                                             </div>
                                         </div>
                                     </div>
@@ -181,11 +184,12 @@ export default {
 
 li.carousel__slide:hover,
 .seller-list:hover {
-    transition: all .3s ease 0s;
+    /* transition: all .3s ease 0s; */
     -moz-box-shadow: 0 2px 4px 0 rgb(0 0 0 / 25%);
     box-shadow: 0 2px 4px 0 rgb(0 0 0 / 25%);
     transform: scale(1.0);
-    transition: ease-in-out;
+    /* transition: ease-in-out; */
+    @apply rounded-sm m-1 shadow-md hover:shadow-lg;
 }
 
 .carousel__prev,

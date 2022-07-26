@@ -38,6 +38,7 @@
 
     <!-- Styles -->
     <link href="{{ mix('web-assets/css/app.css') }}" rel="stylesheet">
+    <script src="magnific-popup/jquery.magnific-popup.js"></script>
     {{-- <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script> --}}
     <!-- Scripts -->
     <style>
@@ -126,6 +127,11 @@
 </head>
 
 <body>
+    <style>
+        .-pbm{
+            @apply text-xs bg-[#323232] pb-4;
+        }
+    </style>
 
     <noscript>To run this application, JavaScript is required to be enabled.</noscript>
 
