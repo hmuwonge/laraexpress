@@ -10,6 +10,7 @@ try {
 window.axios = require('axios');
 window.axios.defaults.headers.common['CSRF-TOKEN'] = document.getElementById('token');
 window.url = document.getElementById('base_url');
+console.log('testing');
 window.app_path = document.getElementById('app_path');
 // window.magnificPopup = require('magnific-popup');
 

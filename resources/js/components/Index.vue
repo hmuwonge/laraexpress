@@ -4,7 +4,103 @@
 
         <div class="home-screen-main h-[517px] p-1">
             <!-- <section class=""> -->
-            <Categorymenu class="w-[240px]" />
+            <!-- <Categorymenu class="w-[240px]" /> -->
+            <div class="bg-white py-3 rounded-md hidden lg:block h-[516px] text-xs overflow-hidden">
+
+                <!-- <p class="flex items-center px-4">
+        <CatIcon class="h-6 w-6 mr-2" />
+        Categories
+    </p> -->
+
+                <div class="flyout-w flex-shrink-0">
+                    <div class="flyout" role="menu">
+                        <button @click="showGrocery">groce</button>
+                        <!-- <a href="/groceries/" class="itm" role="menuitem">
+                <svg viewBox="0 0 24 24" class="ic -mrxs -fsh0" width="20" height="20">
+                    <use xlink:href="https://www..ug/assets_he/images/i-icons.edbc85eb.svg#cat-groceries"></use>
+                </svg>
+                <span class="text">Supermarket</span>
+            </a> -->
+                        <div class="sub border-2 border-red-500" role="menu">
+                            <div class="sub-w border-2 border-yellow-400">
+                                <div class="co">
+                                    <div class="cat">
+                                        <a href="/food-cupboard-supplies/" class="tit" role="menuitem">FOOD CUPBOARD</a>
+                                        <a href="/sugar-3999/" class="s-itm" role="menuitem">Sugar</a>
+                                        <a href="/flours-meals/" class="s-itm" role="menuitem">Flours</a>
+                                        <a href="/dried-beans-grains-rice/" class="s-itm" role="menuitem">Dried Beans, Grains &amp; Rice</a>
+                                        <a href="/crisps-snacks-nuts/" class="s-itm" role="menuitem">Snacks</a>
+                                        <a href="/cooking-oil/" class="s-itm" role="menuitem">Cooking Oil</a><a href="/soft-drinks/" class="s-itm" role="menuitem">Soft Drinks</a><a href="/juice-drinks/" class="s-itm" role="menuitem">Fruit Juice</a><a href="/water/" class="s-itm" role="menuitem">Water</a><a href="/hot-beverages-coffee-tea-cocoa/" class="s-itm" role="menuitem">Coffee, Tea &amp; Cocoa</a><a href="/grocery-milk-cream/" class="s-itm" role="menuitem">Milk &amp; Cream</a><a href="/pasta-1593/" class="s-itm" role="menuitem">Pasta</a><a href="/breakfast-foods/" class="s-itm" role="menuitem">Breakfast Foods</a><a href="/cooking-spices/" class="s-itm" role="menuitem">Spices</a>
+                                    </div>
+                                </div>
+                                <div class="co">
+                                    <div class="cat">
+                                        <a href="/beers-wine-spirits/" class="tit" role="menuitem">BEERS, WINES &amp; SPIRITS</a><a href="/vodka/" class="s-itm" role="menuitem">Vodka</a><a href="/red-wine/" class="s-itm" role="menuitem">Red White</a><a href="/liqueor/" class="s-itm" role="menuitem">Liquor</a><a href="/beers/" class="s-itm" role="menuitem">Beers</a><a href="/white-wine/" class="s-itm" role="menuitem">White Wine</a><a href="/whiskey/" class="s-itm" role="menuitem">Whiskey</a><a href="/champagne-sparkling-wine/" class="s-itm" role="menuitem">Champagne</a>
+                                    </div>
+                                    <div class="cat">
+                                        <a href="/household-supplies/" class="tit" role="menuitem">CLEANING</a><a href="/laundry-supplies/" class="s-itm" role="menuitem">Laundry</a><a href="/household-air-fresheners/" class="s-itm" role="menuitem">Household Air Fresheners</a><a href="/household-toilet-cleaners/" class="s-itm" role="menuitem">Toilet Cleaners</a><a href="/papers-rolls/" class="s-itm" role="menuitem">Toilet Paper,Wipes &amp; Kitchen Towels</a><a href="/household-bathroom-toilet-cleaners/" class="s-itm" role="menuitem">Household Cleaning</a>
+                                    </div>
+                                </div>
+                                <div class="co">
+                                    <div class="cat">
+                                        <a href="/baby-products/" class="tit" role="menuitem">BABY PRODUCTS</a><a href="/baby-disposable-diapers/" class="s-itm" role="menuitem">Disposable Diapers</a><a href="/baby-wipes-refills/" class="s-itm" role="menuitem">Wipes &amp; Refills</a><a href="/baby-feeding-products/" class="s-itm" role="menuitem">Feeding</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a class="itm" role="menuitem" tabindex="0">
+                            <svg viewBox="0 0 24 24" class="ic -mrxs -fsh0" width="20" height="20">
+                                <use xlink:href="https://www..ug/assets_he/images/i-icons.edbc85eb.svg#cat-othercategories"></use>
+                            </svg>
+                            <span class="text">Other categories</span></a>
+                        <div class="sub" role="menu">
+                            <div class="sub-w">
+                                <div class="co flex">
+                                    <div class="cat">
+                                        <a href="https://www..ug/-mall/" class="tit" role="menuitem">Official stores</a>
+                                        <a class="s-itm" role="menuitem">Phones &amp; Tablets</a><a class="s-itm" role="menuitem">ELECTRONICS</a><a class="s-itm" role="menuitem">SUPERMARKET</a>
+                                    </div>
+                                    <div class="cat">
+                                        <a href="https://www..ug/-global/" class="tit" role="menuitem">Jumia Global</a><a href="/womens-fashion/?shipped_from=_global" class="s-itm" role="menuitem">Women's Fashion</a><a href="/mens-fashion/?shipped_from=_global" class="s-itm" role="menuitem">Men's Fashion</a><a href="/teen-girls-fashion/?shipped_from=_global" class="s-itm" role="menuitem">Girl's Fashion</a><a href="/boys-fashion/?shipped_from=_global" class="s-itm" role="menuitem">Boy's Fashion</a><a href="/luggage-travel-gear/?shipped_from=_global" class="s-itm" role="menuitem">Luggage</a><a href="/health-beauty/?shipped_from=_global" class="s-itm" role="menuitem">Health &amp; Beauty</a>
+                                    </div>
+                                    <div class="cat">
+                                        <a href="/pet-supplies/" class="tit" role="menuitem">Pet Supplies</a>
+                                    </div>
+                                    <div class="cat">
+                                        <a href="/miscellaneous/" class="tit" role="menuitem">Miscellaneous</a>
+                                    </div>
+                                    <div class="cat">
+                                        <a href="/toys-games/" class="tit" role="menuitem">Toys &amp; Games</a><a class="s-itm" role="menuitem">Toys</a><a href="/kids-games/" class="s-itm" role="menuitem">Games</a><a href="/outdoor-sports-toys/" class="s-itm" role="menuitem">Sports &amp; Outdoor Play</a>
+                                    </div>
+                                    <div class="cat">
+                                        <a href="/automobile/" class="tit" role="menuitem">Automobile</a><a href="/car-electronics-accessories/" class="s-itm" role="menuitem">Car Electronics &amp; Accessories</a>
+                                    </div>
+                                    <div class="cat">
+                                        <a href="/musical-instruments/" class="tit" role="menuitem">Musical Instruments</a>
+                                    </div>
+                                    <div class="cat">
+                                        <a href="/books-movies-music/" class="tit" role="menuitem">Books, Movies and Music</a>
+                                    </div>
+                                    <div class="cat">
+                                        <a href="/services/" class="tit" role="menuitem">Services</a>
+                                    </div>
+                                    <div class="cat">
+                                        <a href="/industrial-scientific/" class="tit" role="menuitem">Industrial &amp; Scientific</a>
+                                    </div>
+                                    <div class="cat">
+                                        <a href="/livestock/" class="tit" role="menuitem">Livestock</a>
+                                    </div>
+                                    <div class="cat">
+                                        <a href="/wholesale/" class="tit" role="menuitem">Wholesale</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
 
             <!-- slider section -->
             <div class="w-full basis-3/5 lg:basis-3/5 lg:space-y-4 md:block md:w-full sm:w-full h-[476px] relative box-border m-0 p-0">
@@ -16,12 +112,12 @@
                         <a href="#" class="hover:text-red-500 hover:font-bold">New user Zone</a>
                     </div>
                 </div>
-                <!-- Image sliders section -->
+
                 <div class="h-[270px]">
                     <Sliders />
                 </div>
 
-                <!-- welcome section -->
+
                 <div class="absolute hidden md:block sm:hidden box-border w-full h-[190px] m-h-[169px]">
                     <div class=" w-full flex items-center py-4 px-[12px] h-full overflow-hidden
                     bg-gradient-to-r from-yellow-500 to-red-500 rounded-lg">
@@ -34,7 +130,7 @@
                                 Get your coupon
                             </button>
                         </div>
-                        <!-- slider lower section -->
+
                         <div class="flex w-3/4 space-x-1">
                             <div class="rounded-lg h-40 py-0 w-28 bg-white ">
                                 <img src="https://ae04.alicdn.com/kf/S75592416283e4801a9044766f51a8bb0B.jpg_120x120Q90.jpg_.webp" alt="" srcset="" />
@@ -88,10 +184,10 @@
                     </div>
                 </div>
 
-            </div>
+            </div> -->
 
             <!-- welcome profile section -->
-            <div class="welcome">
+           <div class="welcome">
                 <div class="w-full bg-white rounded-lg overflow-hidden">
                     <div class="mx-auto bg-gray-300 rounded-full h-16 w-16 bg-[url('https://ae01.alicdn.com/kf/Hf768b4fa794e44bfb7cc86e4a528a035h.png')]"></div>
                     <p class="font-bold text-lg text-center py-2">Welcome to LaraExpress</p>
@@ -323,8 +419,8 @@
                         <svg viewBox="0 0 66 24" class="ic" width="66" height="24">
                             <use xlink:href="#"></use>
                         </svg></a>
-                        <a class="vent-link" title="Jumia Prime" href="#" rel="nofollow noopener" target="_blank">
-                            <svg viewBox="0 0 77 24" class="ic" width="77" height="24">
+                    <a class="vent-link" title="Jumia Prime" href="#" rel="nofollow noopener" target="_blank">
+                        <svg viewBox="0 0 77 24" class="ic" width="77" height="24">
                             <use xlink:href="#"></use>
                         </svg></a></div>
                 <div class="col3 -df -j-end -wt -mla">
@@ -359,6 +455,17 @@ export default {
     },
 
     props: {},
+    data() {
+        return {
+            hover: false,
+            isGrocery: false,
+        };
+    },
+    methods: {
+        showGrocery() {
+            this.isGrocery = true;
+        },
+    }
 };
 </script>
 
@@ -370,7 +477,7 @@ nav.vertical {
 }
 
 .nl-btn {
-    @apply px-2 py-1 bg-transparent rounded-sm shadow-sm cursor-pointer uppercase font-medium m-0 overflow-visible ;
+    @apply px-2 py-1 bg-transparent rounded-sm shadow-sm cursor-pointer uppercase font-medium m-0 overflow-visible;
 }
 
 .brd-btn {
@@ -382,17 +489,18 @@ nav.vertical {
     @apply px-4
 }
 
-.-pbm{
-            @apply text-xs bg-[#323232] pb-4;
-        }
+.-pbm {
+    @apply text-xs bg-[#323232] pb-4;
+}
 
 .-pbl {
     @apply py-4 mx-auto max-w-7xl w-full flex box-border text-white;
 }
 
-.-pbxs{
+.-pbxs {
     @apply pb-1 normal-case inline-block bg-transparent box-border text-xs;
 }
+
 .-bg-gy8 {
     @apply mb-4 box-border bg-[#282828] text-xs text-[#c7c7c7];
 }
@@ -430,7 +538,7 @@ nav.vertical {
     width: 62.5%;
 }
 
-.f-t{
+.f-t {
     @apply text-white uppercase font-bold;
 }
 
@@ -439,7 +547,7 @@ nav.vertical {
 }
 
 .row {
-    @apply p-4 max-w-7xl  w-full mx-auto flex;
+    @apply p-4 max-w-7xl w-full mx-auto flex;
 }
 
 .-d-co {
@@ -459,7 +567,7 @@ nav.vertical {
 }
 
 .nl-fi {
-    @apply py-2 text-sm border-2  text-white bg-white leading-5  rounded-md pl-10 w-full shadow focus:outline-none focus:bg-white m-0 overflow-visible focus:text-gray-900 box-border;
+    @apply py-2 text-sm border-2 text-white bg-white leading-5 rounded-md pl-10 w-full shadow focus:outline-none focus:bg-white m-0 overflow-visible focus:text-gray-900 box-border;
 }
 
 .-i-start {
@@ -474,28 +582,32 @@ nav.vertical {
     @apply w-1/5 hidden lg:block h-[516px] right-0;
 }
 
-.-gy3{
+.-gy3 {
     color: #c7c7cd;
 }
 
-#jm .-pbl, #jm .-pvl {
+#jm .-pbl,
+#jm .-pvl {
     padding-bottom: 24px;
     margin-left: auto;
     margin-right: auto;
 }
 
-#jm .-lsn, .dtls .smry {
+#jm .-lsn,
+.dtls .smry {
     list-style: none;
 }
-a{
+
+a {
     text-decoration: none;
 }
-ul{
+
+ul {
     @apply m-0 p-0 box-border block
 }
 
-.-phn{
-   @apply px-0 flex flex-wrap;
+.-phn {
+    @apply px-0 flex flex-wrap;
 }
 
 li {
@@ -503,12 +615,87 @@ li {
     text-align: -webkit-match-parent;
 }
 
-.-mtl{
+.-mtl {
     margin-top: 24px;
 }
 
-.-i-ctr{
+.-i-ctr {
     align-items: center;
     justify-content: center;
+}
+
+.flyout-w {
+    width: 206px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.itm,
+.flyout {
+    padding-left: 8px;
+}
+.flyout {
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 50;
+    height: 384px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.05);
+    flex-wrap: wrap;
+    flex-direction: column;
+    display: flex;
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+.sub-w {
+    height: 100%;
+    width: 728px;
+    /* display: flex; */
+    box-sizing: border-box;
+    background-color: rgb(142, 20, 20);
+    border: 1px solid #e9e9e9;
+    /* visibility: visible; */
+    display: block;
+    z-index: 1000;
+}
+
+ .sub {
+    position: absolute;
+    left: 230px;
+    transition: all 0s 0.2s;
+    padding: 0;
+    width: 0;
+    height: 516px;
+    box-shadow: inset 1px 0 1px 0 #ededed;
+    order: 99;
+    background-color: rgb(86, 61, 230);
+    visibility: visible;
+    /* opacity: 0; */
+    color: #282828;
+    box-sizing: border-box;
+}
+
+.flyout .co{
+    width: 33.3333333333%;
+}
+
+.flyout .cat{
+    padding-left: 8px;
+    padding-bottom: 16px;
+    padding-right: 8px;
+    padding-top: 4px;
+}
+
+.flyout .tit{
+text-overflow: ellipsis;
+white-space: nowrap;
+text-transform: uppercase;
+font-weight: 500;
+padding-top: 4px;
+overflow: hidden;
+display: block;
 }
 </style>

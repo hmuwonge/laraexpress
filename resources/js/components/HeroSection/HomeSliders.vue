@@ -18,8 +18,8 @@
                     </div>
                 </slide>
 
-                <template #addons>
-                    <navigation />
+                <template #addons="{slidesCount}">
+                    <navigation v-if="slidesCount"/>
                     <pagination class="relative p-0 m-0 z-50 -mt-6 items-center justify-center "/>
                 </template>
             </carousel>
