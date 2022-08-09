@@ -15,6 +15,10 @@ window.app_path = document.getElementById('app_path');
 // window.magnificPopup = require('magnific-popup');
 
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
+window.axios.defaults.baseURL = 'http://sites.laraexpress.test/api/v1/';
+// console.log(window.axios.defaults.baseURL);
+// window.axios.defaults.baseURL = document.head.querySelector('meta[name="api-base-url"]').content;
+
 
 /**
  * Echo exposes an expressive API for subscribing to channels and listening

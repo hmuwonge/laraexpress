@@ -126,7 +126,3 @@ export default {
     z-index: unset;
 }
 </style>
-
-<style scoped>
-.home-banner {}
-</style>

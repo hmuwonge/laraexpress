@@ -138,6 +138,7 @@ export default {
             return (state.categories = data);
         },
         getSliders(state, data) {
+            console.log('sliders data', data);
             return (state.sliders = data);
         },
         getDefaultCategory(state, data) {

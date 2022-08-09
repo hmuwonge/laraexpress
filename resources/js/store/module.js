@@ -62,7 +62,7 @@ export default {
         allSellers: [],
         default_assets: {},
         userAddresses: {},
-        url: document.getElementById("base_url").value,
+        url: document.getElementById("base_url"),
 
         //for filtering
         filter_loaded: false,

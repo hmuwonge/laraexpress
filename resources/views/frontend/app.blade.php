@@ -30,6 +30,8 @@
     <meta property="og:description" content="{!! $meta['meta_description'] !!}" />
     <meta property="og:site_name" content="{{ env('APP_NAME') }}" />
     <meta property="fb:app_id" content="{{ env('FACEBOOK_PIXEL_ID') }}">
+    <meta name="api-base-url" content="{{ url('api/v1') }}" />
+
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -38,7 +40,7 @@
 
     <!-- Styles -->
     <link href="{{ mix('web-assets/css/app.css') }}" rel="stylesheet">
-    <script src="magnific-popup/jquery.magnific-popup.js"></script>
+    {{-- <script src="magnific-popup/jquery.magnific-popup.js"></script> --}}
     {{-- <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script> --}}
     <!-- Scripts -->
     <style>

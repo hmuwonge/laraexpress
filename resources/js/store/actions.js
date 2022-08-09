@@ -1,6 +1,6 @@
 export default {
     blogDetails(context, slug) {
-        let url = context.state.url + '/home/blog-details/' + slug;
+        let url = context.state.url + '/api/v1/blog-details/' + slug;
         axios.get(url).then((response) => {
             context.commit("blogDetails", response.data.blog);
             context.commit("getBlogCategories", response.data.categories);
@@ -10,13 +10,13 @@ export default {
         })
     },
     contactPage(context) {
-        let url = context.state.url + '/home/contact-page';
+        let url = context.state.url + '/api/v1/contact-page';
         axios.get(url).then((response) => {
             context.commit("getContactPage", response.data.contact);
         })
     },
     othersPage(context,slug) {
-        let url = context.state.url + '/home/others-page/' + slug;
+        let url = context.state.url + '/api/v1/others-page/' + slug;
         let requestData = {
             slug:slug
         }
@@ -25,26 +25,26 @@ export default {
         })
     },
     allCampaign(context, page) {
-        let url = context.state.url + '/home/campaign-lists?page=' + page;
+        let url = context.state.url + '/api/v1/campaign-lists?page=' + page;
         axios.get(url).then((response) => {
             context.commit("getAllCampaign", response.data.campaigns);
         })
     },
     campaignProducts(context, requestData) {
-        let url = context.state.url + '/home/campaign-products';
+        let url = context.state.url + '/api/v1/campaign-products';
         axios.get(url, {params: requestData}).then((response) => {
             context.commit("getCampaignProducts", response.data);
         })
     },
     dailyDeals(context, form) {
-        let url = context.state.url + '/home/daily-deals/?page=1';
+        let url = context.state.url + '/api/v1/daily-deals/?page=1';
         axios.get(url, {params: form}).then((response) => {
             context.commit("getDailyDeals", response.data.products);
         });
     },
 
     productDetails(context, slug) {
-        let url = context.state.url + '/home/product-details/' + slug;
+        let url = context.state.url + '/api/v1/product/details/' + slug;
         axios.get(url).then((response) => {
             var index = context.state.product_details.findIndex(p =>
                 p.slug == response.data.product.slug
