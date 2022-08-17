@@ -1616,7 +1616,7 @@
                   :nav="true"
                   class=""
                 >
-                  <slide v-for="slide in sliders" :key="slide">
+                  <slide v-for="slide in slidersData" :key="slide">
                     <div class="carousel__item rounded-md">
                       <div
                         class="
@@ -2256,13 +2256,14 @@ export default {
         },
     },
     computed:{
-       sliders() {
-        console.log('sliders',this.$store.getters.getSliders);
-      return this.$store.getters.getSliderBanners;
+       slidersData() {
+        console.log('sliders',this.$store.getters.getAllCategories);
+      return this.$store.getters.getAllCategories;
     },
     }
 };
 </script>
+
 <style scoped>
 nav.vertical {
   position: fixed;

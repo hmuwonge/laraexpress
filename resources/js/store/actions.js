@@ -131,6 +131,14 @@ export default {
             context.commit("setCountryList", response.data.countries);
         });
     },
+    categories(context)
+    {
+        let url = context.state.url + '/v1/all-categories';
+        axios.get(url).then((response) => {
+            console.log('all categories', response);
+            context.commit("getAllCategories", response.data);
+        });
+    },
     languageKeywords(context)
     {
         let url = context.state.url + '/language/keywords';

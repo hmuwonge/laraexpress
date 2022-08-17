@@ -15,7 +15,6 @@ export default {
         seller_paginate_page: 1,
         brand_paginate_url: "",
         brand_paginate_page: 1,
-
         campaign_products: [],
         campaign_brands: [],
         campaign_shops: [],
@@ -63,7 +62,6 @@ export default {
         default_assets: {},
         userAddresses: {},
         url: document.getElementById("base_url"),
-
         //for filtering
         filter_loaded: false,
         products: [],

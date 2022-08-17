@@ -16,7 +16,8 @@ class ShopController extends Controller
 
     public function shop_setting(Request $request)
     {
-        $shop = Shop::with('products')->find(auth()->user()->shop_id);
+        // dd(auth()->user()->shop->user_id);
+        $shop = Shop::with('products')->find(auth()->user()->shop->user_id);
         return view('addon:multivendor::admin.shop.shop_settings', compact('shop'));
     }
     public function shop_setting_update(Request $request, $id)

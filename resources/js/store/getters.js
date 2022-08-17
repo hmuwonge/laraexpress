@@ -106,7 +106,11 @@ export default {
         return state.shimmer;
     },
     getAllCategories(state) {
+
+        console.log('categories', state.url);
+
         return state.allCategories;
+
     },
     getAllBrands(state) {
         return state.allBrands;
@@ -217,7 +221,7 @@ export default {
         return state.video_details;
     },
     getSliderBanners(state) {
-        console.log(state.slider_banners);
+        // console.log('slides',state.slider_banners);
         return state.slider_banners;
     },
     getMobileNo(state) {

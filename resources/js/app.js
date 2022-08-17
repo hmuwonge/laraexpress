@@ -10,6 +10,7 @@ import VueLazyload from 'vue-lazyload';
 
 import storeDate from './store/index.js';
 import module from './store/module.js';
+import helper from './helpers';
 
 const store = createStore({
     modules:{
@@ -20,6 +21,7 @@ const store = createStore({
 
 // 5. Create and mount the root instance.
 const app = createApp({
+    mixins: [helper],
     components: {
         Home,
         FrontendMaster
