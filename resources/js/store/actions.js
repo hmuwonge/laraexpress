@@ -133,10 +133,16 @@ export default {
     },
     categories(context)
     {
-        let url = context.state.url + '/v1/all-categories';
+        let url = '/all-categories';
         axios.get(url).then((response) => {
-            console.log('all categories', response);
-            context.commit("getAllCategories", response.data);
+            context.commit("getAllCategories", response.data.data);
+        });
+    },
+    homeSliders(context)
+    {
+        let url = '/setting/home/sliders';
+        axios.get(url).then((response) => {
+            context.commit("getSliderBanners", response.data.data.one);
         });
     },
     languageKeywords(context)

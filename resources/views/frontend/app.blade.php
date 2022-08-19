@@ -30,7 +30,7 @@
     <meta property="og:description" content="{!! $meta['meta_description'] !!}" />
     <meta property="og:site_name" content="{{ env('APP_NAME') }}" />
     <meta property="fb:app_id" content="{{ env('FACEBOOK_PIXEL_ID') }}">
-    <meta name="api-base-url" content="{{ url('api/v1') }}" />
+    <meta name="base_url" content="{{ url('/') }}" />
 
 
     <!-- Google Fonts -->

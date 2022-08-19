@@ -8,17 +8,16 @@ try {
 } catch (e) {}
 
 window.axios = require('axios');
-window.axios.defaults.headers.common['CSRF-TOKEN'] = document.getElementById('token').value;
+window.axios.defaults.headers.common['CSRF-TOKEN'] = document.getElementById('token');
 window.url = document.getElementById('base_url');
 console.log('testing');
 window.app_path = document.getElementById('app_path');
 // window.magnificPopup = require('magnific-popup');
 
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
-window.axios.defaults.baseURL = 'http://sites.laraexpress.test/api/v1/';
+window.axios.defaults.baseURL = 'http://sites.laraexpress.test/api/v1';
 // console.log(window.axios.defaults.baseURL);
 // window.axios.defaults.baseURL = document.head.querySelector('meta[name="api-base-url"]').content;
-
 
 /**
  * Echo exposes an expressive API for subscribing to channels and listening

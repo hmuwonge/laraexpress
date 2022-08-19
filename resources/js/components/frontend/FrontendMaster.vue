@@ -1,7 +1,6 @@
 <template>
     <div>
         <router-view></router-view>
-
     </div>
 </template>
 
@@ -34,7 +33,8 @@ export default {
     ],
 
     mounted() {
-        // console.log('frontend master called');
+       this.$store.dispatch('categories');
+       this.$store.dispatch('homeSliders');
     },
 };
 </script>

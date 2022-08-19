@@ -185,6 +185,9 @@ export default {
     getAllCategories(state, data) {
         return (state.allCategories = data);
     },
+    getSliderBanners(state, data) {
+        return (state.sliders = data);
+    },
     getAllBrands(state, data) {
         let brands = data.data;
         for (let i = 0; i < brands.length; i++) {

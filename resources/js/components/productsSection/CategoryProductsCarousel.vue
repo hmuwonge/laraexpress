@@ -14,7 +14,7 @@
         <carousel :items-to-show="2" :settings="settings" :breakpoints="breakpoints" :auto-play="true">
             <slide v-for="slide in 20" :key="slide">
                 <div class="carousel__item flex justify-center items-center w-full text-sm text-gray-300 my-1 ">
-                    <div class="hover:shadow-sm rounded-sm cloned mr-1">
+                    <div class=" rounded-sm cloned mr-1">
                         <div class="item-inner product-thumb trg transition product-layout">
                             <div class="product-item-container">
                                 <div class="left-block">
@@ -112,11 +112,11 @@ export default {
 }
 
 li.carousel__slide:hover, .seller-list:hover {
-	transition: all .3s ease 0s;
+	/* transition: all .3s ease 0s; */
 	-moz-box-shadow: 0 2px 4px 0 rgb(0 0 0 / 25%);
 	box-shadow: 0 2px 4px 0 rgb(0 0 0 / 25%);
-	transform: scale(1.0);
-    transition: ease-in-out;
+	/* transform: scale(1.0); */
+    /* transition: ease-in-out; */
 }
 
 .carousel__prev,

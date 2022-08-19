@@ -463,7 +463,6 @@ if (!function_exists('filter_shops')) {
 if (!function_exists('filter_products')) {
     function filter_products($product_query)
     {
-
         return $product_query->whereIn('shop_id', published_shops_ids())->where('published', 1);
     }
 }
