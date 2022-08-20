@@ -164,8 +164,8 @@ class ProductController extends Controller
         foreach ($request->category_ids ?? [] as $id) {
             $shop_category_ids[] = CategoryUtility::get_grand_parent_id($id);
         }
-        // $shop_category_ids =  array_merge(array_filter($shop_category_ids), $product->shop->shop_categories->pluck('category_id')->toArray());
-        // $product->shop->categories()->sync($shop_category_ids);
+        $shop_category_ids =  array_merge(array_filter($shop_category_ids), $product->shop->shop_categories->pluck('category_id')->toArray());
+        $product->shop->categories()->sync($shop_category_ids);
 
         // shop brand
         if ($request->brand_id) {
